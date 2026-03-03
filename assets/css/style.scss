@@ -1,27 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css");
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
-$primary: #9D7333;
-$secondary: #E7A94A;
-$success: #1A492D;
+$primary: #9d7333;
+$secondary: #e7a94a;
+$success: #1a492d;
 
 @font-face {
-    font-family: 'helvetica';
-    src: url('../font/helvetica-200.ttf');
-    font-weight: 200;
+  font-family: "helvetica";
+  src: url("../font/helvetica-200.ttf");
+  font-weight: 200;
 }
 
 @font-face {
-    font-family: 'helvetica';
-    src: url('../font/helvetica-400.ttf');
-    font-weight: 400;
+  font-family: "helvetica";
+  src: url("../font/helvetica-400.ttf");
+  font-weight: 400;
 }
 
 @font-face {
-    font-family: 'helvetica';
-    src: url('../font/helvetica-600.ttf');
-    font-weight: 600;
+  font-family: "helvetica";
+  src: url("../font/helvetica-600.ttf");
+  font-weight: 600;
 }
 
 h1,
@@ -42,828 +42,1067 @@ input,
 optgroup,
 select,
 textarea {
-    font-family: "Noto Sans JP", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 body {
-    overflow-x: hidden !important;
+  overflow-x: hidden !important;
 }
 
 a,
 i,
 .btn,
 div {
-    text-decoration: none !important;
-    transition: all 0.3s ease-in-out !important;
+  text-decoration: none !important;
+  transition: all 0.3s ease-in-out !important;
 }
 
 textarea {
-    outline: 2px solid transparent !important;
-    box-shadow: none !important;
+  outline: 2px solid transparent !important;
+  box-shadow: none !important;
 }
 
 input,
 .navbar-toggler,
 button,
 input {
-    outline: 2px solid transparent !important;
-    box-shadow: none !important;
+  outline: 2px solid transparent !important;
+  box-shadow: none !important;
 }
 
 body {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 html {
-    --scrollbarBG: #cfd8dc;
-    --thumbBG: #90a4ae;
+  --scrollbarBG: #cfd8dc;
+  --thumbBG: #90a4ae;
 }
 
 ::-webkit-scrollbar {
-    width: 6px;
-    height: 6px;
+  width: 6px;
+  height: 6px;
 }
 
 ::-webkit-scrollbar-track {
-    background: white;
+  background: white;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: $primary;
+  background: $primary;
 }
 
-
 .animated {
-    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
 @keyframes up-down {
-    0% {
-        transform: translateY(10px);
-    }
+  0% {
+    transform: translateY(10px);
+  }
 
-    100% {
-        transform: translateY(-10px);
-    }
+  100% {
+    transform: translateY(-10px);
+  }
 }
 
 .lg-container {
-    width: 100%;
-    max-width: 1340px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 1340px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 
 .md-container {
-    width: 100%;
-    max-width: 1120px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 1120px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 
 .sm-container {
-    width: 100%;
-    max-width: 880px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 880px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 
 .header {
-    width: 100%;
-    background: #9D7333;
+  width: 100%;
+  background: #9d7333;
 
-    .navbar {
-        padding: 0px;
+  .navbar {
+    padding: 0px;
 
-        .navbar-brand {
-            padding: 15px 40px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: #fff;
+    .navbar-brand {
+      padding: 15px 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #fff;
 
-            .logo {
-                height: 70px;
-            }
-        }
-
-        .navbar-nav {
-            padding: 0px 44px;
-
-            .nav-link {
-                padding: 10px 20px;
-                font-family: 'Noto Sans JP';
-                font-style: normal;
-                font-weight: 500;
-                font-size: 18px;
-                line-height: 22px;
-                color: #FFFFFF;
-            }
-
-            .nav-link:hover {
-                color: $success;
-            }
-        }
+      .logo {
+        height: 70px;
+      }
     }
+
+    .navbar-nav {
+      padding: 0px 44px;
+
+      .nav-link {
+        padding: 10px 20px;
+        font-family: "Noto Sans JP";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: #ffffff;
+      }
+
+      .nav-link:hover {
+        color: $success;
+      }
+    }
+  }
 }
 
 .hero-section {
-    position: relative;
+  position: relative;
 
-    .hero-content {
-        background: #00000066;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+  .hero-content {
+    background: #00000066;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-        h1 {
-            font-family: 'Noto Sans JP';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 64px;
-            line-height: 77px;
-            color: #FFFFFF;
-            text-shadow: 2px 2px 4px #333333;
-            margin-bottom: 0px;
-        }
+    h1 {
+      font-family: "Noto Sans JP";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 64px;
+      line-height: 77px;
+      color: #ffffff;
+      text-shadow: 2px 2px 4px #333333;
+      margin-bottom: 0px;
     }
-
+  }
 }
 
 .social-links {
-    position: fixed;
-    right: 0;
-    top: 132px;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+  position: fixed;
+  right: 0;
+  top: 132px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 
-    .social {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 8px 16px;
-        width: 65px;
-        height: 41px;
-        border-radius: 4px 0px 0px 4px;
-
-        img {
-            width: 25px;
-        }
-    }
-
-    .s1 {
-        background: #FF0033;
-    }
-
-    .s2 {
-        background: linear-gradient(180deg, #881BDB 0%, #EA4C4F 100%);
-    }
-
-    .s3 {
-        background: #fff;
-        border: 1px solid #06C755;
-    }
-
-    .s4 {
-        background: #000000;
-    }
-}
-
-.slider {
-    position: relative;
-    width: 100%;
-    height: calc(100vh - 100px);
-    overflow: hidden;
-
-    .slide {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-size: cover;
-        background-position: center;
-        opacity: 0;
-        animation: fade 12s infinite;
-    }
-
-    /* Set different animation delays for each slide */
-    .slide:nth-child(1) {
-        animation-delay: 0s;
-    }
-
-    .slide:nth-child(2) {
-        animation-delay: 3s;
-    }
-
-    .slide:nth-child(3) {
-        animation-delay: 6s;
-    }
-
-    .slide:nth-child(4) {
-        animation-delay: 9s;
-    }
-
-    @keyframes fade {
-        0% {
-            opacity: 0;
-        }
-
-        8% {
-            opacity: 1;
-        }
-
-        25% {
-            opacity: 1;
-        }
-
-        33% {
-            opacity: 0;
-        }
-
-        100% {
-            opacity: 0;
-        }
-    }
-}
-
-.center-heading {
-    width: 100%;
+  .social {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 8px 16px;
+    width: 65px;
+    height: 41px;
+    border-radius: 4px 0px 0px 4px;
 
-    .horse {
-        height: 45px;
-        margin-bottom: 8px;
+    img {
+      width: 25px;
+    }
+  }
+
+  .s1 {
+    background: #ff0033;
+  }
+
+  .s2 {
+    background: linear-gradient(180deg, #881bdb 0%, #ea4c4f 100%);
+  }
+
+  .s3 {
+    background: #fff;
+    border: 1px solid #06c755;
+  }
+
+  .s4 {
+    background: #000000;
+  }
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 100px);
+  overflow: hidden;
+
+  .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    // opacity: 0;
+    // animation: fade 12s infinite;
+  }
+
+  /* Set different animation delays for each slide */
+//   .slide:nth-child(1) {
+//     animation-delay: 0s;
+//   }
+
+//   .slide:nth-child(2) {
+//     animation-delay: 3s;
+//   }
+
+//   .slide:nth-child(3) {
+//     animation-delay: 6s;
+//   }
+
+//   .slide:nth-child(4) {
+//     animation-delay: 9s;
+//   }
+
+//   @keyframes fade {
+//     0% {
+//       opacity: 0;
+//     }
+
+//     8% {
+//       opacity: 1;
+//     }
+
+//     25% {
+//       opacity: 1;
+//     }
+
+//     33% {
+//       opacity: 0;
+//     }
+
+//     100% {
+//       opacity: 0;
+//     }
+//   }
+}
+
+.center-heading {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .horse {
+    height: 45px;
+    margin-bottom: 8px;
+  }
+
+  h3 {
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    color: #9d7333;
+    margin-bottom: 56px;
+  }
+
+  h5 {
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    color: #333333;
+    margin-bottom: 32px;
+  }
+
+  p {
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 170%;
+    text-align: center;
+    color: #333333;
+    margin-bottom: 24px;
+
+    span {
+      color: $primary;
+    }
+  }
+}
+
+.about-section {
+  width: 100%;
+  padding: 80px 0px 64px;
+
+  .about-content {
+    width: 100%;
+    background-image: url(../images/about-bg.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    p {
+      font-family: "Noto Sans JP";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 170%;
+      color: #333333;
+      margin-bottom: 24px;
+
+      span {
+        color: $primary;
+      }
     }
 
-    h3 {
-        font-family: 'Noto Sans JP';
+    .bottom-right {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+
+      h6 {
+        font-family: "Noto Sans JP";
         font-style: normal;
-        font-weight: 700;
-        font-size: 40px;
-        line-height: 48px;
-        text-align: center;
-        color: #9D7333;
-        margin-bottom: 56px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 170%;
+        color: #333333;
+      }
+    }
+  }
+
+  .bottom-images {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 64px;
+
+    .h-left {
+      height: 279px;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .h-right {
+      height: 223px;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+  }
+}
+
+.list-of-horses {
+  width: 100%;
+  padding: 64px 0px;
+  min-height: 500px;
+  background-image: url(../images/bg-grass.png);
+  background-size: 100%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  .horse-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+    width: 100%;
+    min-height: 527px;
+    background: #9d7333;
+    border-radius: 8px;
+    margin-bottom: 30px;
+
+    .banner {
+      width: 100%;
+      height: 375px;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 15px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
     }
 
     h5 {
-        font-family: 'Noto Sans JP';
+      font-family: "Noto Sans JP";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      margin-bottom: 15px;
+      color: #ffffff;
+    }
+
+    .tags {
+      display: flex;
+      gap: 4px;
+      margin-bottom: 8px;
+      width: 100%;
+
+      .tag {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 4px 8px;
+        gap: 10px;
+        width: 100%;
+        height: 25px;
+        background: #ffffff;
+        border-radius: 4px;
+        font-family: "Noto Sans JP";
         font-style: normal;
-        font-weight: 500;
-        font-size: 32px;
-        line-height: 38px;
+        font-weight: 400;
+        font-size: 10px;
+        color: #9d7333;
+      }
+    }
+  }
+
+  .bottom-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .bottom-pagination {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .custom-pagination {
+      gap: 8px;
+    }
+
+    .custom-pagination .page-link {
+      border: none;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      color: #9d7333;
+      padding: 5px 10px;
+      border-radius: 0;
+      background: transparent;
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+
+    .custom-pagination .page-item.active .page-link {
+      background-color: #b57b2c;
+      color: #fff;
+    }
+
+    .custom-pagination .page-link:hover {
+      background-color: #f1e2cc;
+      color: #b57b2c;
+    }
+
+    .custom-pagination .page-item.disabled .page-link {
+      color: #b57b2c;
+      background: transparent;
+    }
+  }
+}
+
+.play-btn {
+  display: flex;
+  align-items: center;
+  margin-top: 55px;
+
+  .play {
+    width: 70px;
+    height: 70px;
+    background: #e7a94a;
+    border: 1px solid #9d7333;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .btn-light {
+    margin-left: -35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 40px 12px 56px;
+    gap: 24px;
+    height: 53px;
+    background: #ffffff;
+    border: 1px solid #9d7333;
+    border-radius: 30px;
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #9d7333;
+    position: relative;
+    z-index: 0;
+  }
+}
+
+.ranking {
+  padding: 64px 0px;
+}
+
+.ranking-section {
+  width: 100%;
+  padding: 80px 48px 33px 48px;
+  width: 100%;
+  min-height: 503px;
+  background: #ffffff;
+  border: 2px solid #9d7333;
+  border-radius: 8px;
+  position: relative;
+  margin-top: 67px;
+
+  .card-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 40px;
+    gap: 10px;
+    width: fit-content;
+    height: 70px;
+    background: #9d7333;
+    border-radius: 4px;
+    position: absolute;
+    left: 50%;
+    top: -35px;
+    transform: translateX(-50%);
+
+    span {
+      font-family: "Noto Sans JP";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 38px;
+      text-align: center;
+      color: #ffffff;
+    }
+  }
+
+  .ranking-cards-row {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    gap: 24px;
+
+    .ranking-card {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      .badge {
+        margin-bottom: 8px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          height: 54px;
+        }
+
+        p {
+          font-family: "Noto Sans JP";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 19px;
+          text-align: center;
+          color: #333333;
+          margin-bottom: 0px;
+        }
+      }
+
+      .banner {
+        width: 100%;
+        height: 270px;
+        border-radius: 8px;
+        overflow: hidden;
+        margin-bottom: 15px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      h4 {
+        font-family: "Noto Sans JP";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
         text-align: center;
         color: #333333;
-        margin-bottom: 32px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+
+.support-methods {
+  padding: 64px 0px;
+}
+
+.support-card {
+  width: 100%;
+  height: calc(100% - 20px);
+  margin-bottom: 20px;
+  border: 1px solid #9d7333;
+  border-radius: 8px;
+  overflow: hidden;
+
+  .heading {
+    width: 100%;
+    height: 75px;
+    background: $primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h3 {
+      font-family: "Noto Sans JP";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 170%;
+      text-align: center;
+      color: #ffffff;
+      margin: -8px 0px;
     }
 
     p {
-        font-family: 'Noto Sans JP';
+      font-family: "Noto Sans JP";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 170%;
+      text-align: center;
+      color: #ffffff;
+      margin-bottom: 0px;
+    }
+  }
+
+  .card-inner {
+    width: 100%;
+    height: calc(100% - 75px);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    p {
+      font-family: "Noto Sans JP";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      color: #333333;
+      margin-bottom: 24px;
+    }
+
+    .bullet {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      margin-bottom: 12px;
+
+      .check {
+        width: 14px;
+      }
+
+      span {
+        width: calc(100% - 22px);
+        font-family: "Noto Sans JP";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #333333;
+      }
+    }
+  }
+
+  .card-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+
+    .btn-support {
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+      padding: 12px 24px !important;
+      height: 58px !important;
+      background: #1a492d !important;
+      border-radius: 4px !important;
+      gap: 8px !important;
+      font-family: "Noto Sans JP" !important;
+      font-style: normal !important;
+      font-weight: 500 !important;
+      font-size: 20px !important;
+      line-height: 170% !important;
+      color: #ffffff !important;
+    }
+  }
+}
+
+.faq-section {
+  padding: 64px 0px;
+
+  .custom-accordion::after {
+    display: none;
+  }
+
+  .accordion-item {
+    border-radius: 0px;
+    border: none;
+    border-bottom: 1px solid #d9d9d9;
+  }
+
+  .accordion-button {
+    background: #fff;
+    padding: 24px 60px;
+
+    .content {
+      width: calc(100% - 30px);
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .date {
+      font-family: "Noto Sans JP";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      color: #333333;
+      margin-bottom: 0px;
+    }
+
+    .question {
+      font-family: "Noto Sans JP";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      color: #333333;
+      margin-bottom: 0px;
+    }
+
+    .badge {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 5px 16px;
+      gap: 10px;
+      width: fit-content;
+      height: 29px;
+      background: #9d7333;
+      border-radius: 5px;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: #ffffff;
+    }
+  }
+
+  .accordion-body {
+    background: #fff;
+    padding: 0px 60px 10px;
+
+    p {
+      font-family: "Noto Sans JP";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      color: #333333;
+      margin-bottom: 10px;
+    }
+  }
+
+  .custom-accordion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .accordion-icon {
+    width: 20px;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+
+  .custom-accordion:not(.collapsed) .accordion-icon {
+    transform: rotate(90deg);
+  }
+}
+
+.company-profile {
+  padding: 64px 0px;
+
+  .content-section {
+    .point {
+      padding: 18px 10px;
+      border-bottom: 1px solid #d9d9d9;
+
+      p {
+        font-family: "Noto Sans JP";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #333333;
+        margin-bottom: 0px;
+      }
+    }
+  }
+  .tabs-section {
+    width: 100%;
+    .nav-pills {
+      width: 100%;
+      .nav-item {
+        width: 25%;
+        .nav-link {
+          width: 100%;
+          border-radius: 8px 8px 0px 0px;
+          border: 2px solid #9d7333;
+          font-family: "Noto Sans JP";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 170%;
+          text-align: center;
+          color: #9d7333;
+        }
+        .nav-link.active {
+          background: $primary;
+          color: #fff;
+        }
+      }
+    }
+    .tab-content {
+      border: 2px solid $primary;
+      border-radius: 0px 0px 8px 8px;
+      padding: 24px;
+      p {
+        font-family: "Noto Sans JP";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #333333;
+        margin-bottom: 24px;
+      }
+      .points {
+        display: flex;
+        gap: 8px;
+        align-items: baseline;
+        margin-bottom: 8px;
+        .check {
+          width: 14px;
+        }
+        span {
+          width: calc(100% - 22px);
+          font-family: "Noto Sans JP";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+          color: #333333;
+        }
+      }
+    }
+  }
+}
+
+.requests-section {
+  padding-top: 64px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    border-bottom: 2px solid $primary;
+    padding: 0px 33px;
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 170%;
+    color: #9d7333;
+  }
+  p {
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 170%;
+    text-align: center;
+    color: #333333;
+  }
+}
+
+.footer {
+  width: 100%;
+  margin-top: 100px;
+  padding: 40px 0px;
+  background: #efefef;
+  .footer-row {
+    width: 100%;
+    margin-bottom: 56px;
+    display: flex;
+    justify-content: space-between;
+    .footer-left {
+      width: fit-content;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .f-logo {
+        height: 50px;
+        margin-bottom: 10px;
+      }
+      h4 {
+        font-family: "Noto Sans JP";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        color: #333333;
+        margin-bottom: 10px;
+      }
+      p {
+        font-family: "Noto Sans JP";
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
         line-height: 170%;
-        text-align: center;
         color: #333333;
-        margin-bottom: 24px;
-
-        span {
-            color: $primary;
-        }
+        margin-bottom: 0px;
+      }
     }
-}
-
-.about-section {
-    width: 100%;
-    padding: 80px 0px 64px;
-
-    .about-content {
-        width: 100%;
-        background-image: url(../images/about-bg.png);
-        background-position: top;
-        background-repeat: no-repeat;
-        background-size: 100%;
-
-        p {
-            font-family: 'Noto Sans JP';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 170%;
-            color: #333333;
-            margin-bottom: 24px;
-
-            span {
-                color: $primary;
-            }
-        }
-
-        .bottom-right {
-            width: 100%;
-            display: flex;
-            justify-content: flex-end;
-
-            h6 {
-                font-family: 'Noto Sans JP';
-                font-style: normal;
-                font-weight: 500;
-                font-size: 20px;
-                line-height: 170%;
-                color: #333333;
-            }
-        }
-    }
-
-    .bottom-images {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-        margin-top: 64px;
-
-        .h-left {
-            height: 279px;
-            border-radius: 8px;
-            overflow: hidden;
-        }
-
-        .h-right {
-            height: 223px;
-            border-radius: 8px;
-            overflow: hidden;
-
-        }
-    }
-}
-
-.list-of-horses {
-    width: 100%;
-    padding: 64px 0px;
-    min-height: 500px;
-    background-image: url(../images/bg-grass.png);
-    background-size: 100%;
-    background-position: bottom;
-
-    .horse-card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 24px;
-        width: 100%;
-        min-height: 527px;
-        background: #9D7333;
-        border-radius: 8px;
-        margin-bottom: 30px;
-
-        .banner {
-            width: 100%;
-            height: 375px;
-            border-radius: 8px;
-            overflow: hidden;
-            margin-bottom: 15px;
-
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                object-position: center;
-            }
-        }
-
-        h5 {
-
-            font-family: 'Noto Sans JP';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 20px;
-            margin-bottom: 15px;
-            color: #FFFFFF;
-        }
-
-        .tags {
-            display: flex;
-            gap: 4px;
-            margin-bottom: 8px;
-            width: 100%;
-
-            .tag {
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
-                padding: 4px 8px;
-                gap: 10px;
-                width: 100%;
-                height: 25px;
-                background: #FFFFFF;
-                border-radius: 4px;
-                font-family: 'Noto Sans JP';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 10px;
-                color: #9D7333;
-            }
-        }
-    }
-
-    .bottom-btn {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-.play-btn {
-    display: flex;
-    align-items: center;
-    margin-top: 55px;
-
-    .play {
-        width: 70px;
-        height: 70px;
-        background: #E7A94A;
-        border: 1px solid #9D7333;
-        border-radius: 100px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        z-index: 1;
-    }
-
-    .btn-light {
-        margin-left: -35px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: 12px 40px 12px 56px;
-        gap: 24px;
-        height: 53px;
-        background: #FFFFFF;
-        border: 1px solid #9D7333;
-        border-radius: 30px;
-        font-family: 'Noto Sans JP';
+    .footer-right {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      a {
+        font-family: "Noto Sans JP";
         font-style: normal;
         font-weight: 500;
-        font-size: 20px;
-        color: #9D7333;
-        position: relative;
-        z-index: 0;
+        font-size: 18px;
+        line-height: 22px;
+        color: #333333;
+      }
     }
-
-}
-
-.ranking {
-    padding: 64px 0px;
-
-}
-
-.ranking-section {
+  }
+  .bottom {
     width: 100%;
-    padding: 80px 48px 33px 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span {
+      font-family: "Noto Sans JP";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      text-align: center;
+      color: #333333;
+      a {
+        font-family: "Noto Sans JP";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        color: #333333;
+        text-decoration: underline !important;
+      }
+    }
+  }
+}
+
+.main-banner {
+  width: 100%;
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.category-list {
+  margin-bottom: 64px;
+  h3 {
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 170%;
+    color: #333333;
+    margin-bottom: 16px;
+  }
+  .list {
     width: 100%;
-    min-height: 503px;
-    background: #FFFFFF;
-    border: 2px solid #9D7333;
-    border-radius: 8px;
-    position: relative;
-    margin-top: 67px;
-
-    .card-heading {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: 12px 40px;
-        gap: 10px;
-        width: fit-content;
-        height: 70px;
-        background: #9D7333;
-        border-radius: 4px;
-        position: absolute;
-        left: 50%;
-        top: -35px;
-        transform: translateX(-50%);
-
-        span {
-            font-family: 'Noto Sans JP';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 32px;
-            line-height: 38px;
-            text-align: center;
-            color: #FFFFFF;
-        }
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    .pills {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 4px 8px;
+      gap: 10px;
+      height: 28px;
+      background: #ffffff;
+      border: 1px solid #9d7333;
+      border-radius: 4px;
+      font-family: "Noto Sans JP";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 170%;
+      color: #9d7333;
     }
-
-    .ranking-cards-row {
-        width: 100%;
-        display: flex;
-        align-items: flex-end;
-        gap: 24px;
-
-        .ranking-card {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-
-            .badge {
-                margin-bottom: 8px;
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                img {
-                    height: 54px;
-                }
-
-                p {
-                    font-family: 'Noto Sans JP';
-                    font-style: normal;
-                    font-weight: 700;
-                    font-size: 16px;
-                    line-height: 19px;
-                    text-align: center;
-                    color: #333333;
-                    margin-bottom: 0px;
-                }
-            }
-
-            .banner {
-                width: 100%;
-                height: 270px;
-                border-radius: 8px;
-                overflow: hidden;
-                margin-bottom: 15px;
-
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
-            }
-
-            h4 {
-                font-family: 'Noto Sans JP';
-                font-style: normal;
-                font-weight: 700;
-                font-size: 24px;
-                line-height: 29px;
-                text-align: center;
-                color: #333333;
-                margin-bottom: 15px;
-            }
-        }
-    }
-}
-
-.support-methods {
-    padding: 64px 0px;
-}
-
-.support-card {
-
-    width: 100%;
-    height: calc(100% - 20px);
-    margin-bottom: 20px;
-    border: 1px solid #9D7333;
-    border-radius: 8px;
-    overflow: hidden;
-
-    .heading {
-        width: 100%;
-        height: 75px;
-        background: $primary;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-
-        h3 {
-            font-family: 'Noto Sans JP';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 24px;
-            line-height: 170%;
-            text-align: center;
-            color: #FFFFFF;
-            margin: -8px 0px;
-
-        }
-
-        p {
-            font-family: 'Noto Sans JP';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 170%;
-            text-align: center;
-            color: #FFFFFF;
-            margin-bottom: 0px;
-        }
-    }
-
-    .card-inner {
-        width: 100%;
-        height: calc(100% - 75px);
-        padding: 24px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-
-        p {
-            font-family: 'Noto Sans JP';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 150%;
-            color: #333333;
-            margin-bottom: 24px;
-        }
-
-        .bullet {
-            display: flex;
-            align-items: baseline;
-            gap: 8px;
-            margin-bottom: 12px;
-
-            .check {
-                width: 14px;
-            }
-
-            span {
-                width: calc(100% - 22px);
-                font-family: 'Noto Sans JP';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 20px;
-                color: #333333;
-
-            }
-        }
-
-    }
-
-    .card-bottom {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 24px;
-
-        .btn-support {
-            display: flex !important;
-            justify-content: center !important;
-            align-items: center !important;
-            padding: 12px 24px !important;
-            height: 58px !important;
-            background: #1A492D !important;
-            border-radius: 4px !important;
-            gap: 8px !important;
-            font-family: 'Noto Sans JP' !important;
-            font-style: normal !important;
-            font-weight: 500 !important;
-            font-size: 20px !important;
-            line-height: 170% !important;
-            color: #FFFFFF !important;
-        }
-    }
-}
-
-.faq-section {
-    padding: 64px 0px;
-
-    .custom-accordion::after {
-        display: none;
-    }
-
-    .accordion-item {
-        border-radius: 0px;
-        border: none;
-        border-bottom: 1px solid #D9D9D9;
-    }
-
-    .accordion-button {
-        background: #fff;
-        padding: 24px 60px;
-
-        .content {
-            width: calc(100% - 30px);
-            display: flex;
-            align-items: center;
-            gap: 24px;
-        }
-
-        .date {
-            font-family: 'Noto Sans JP';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 20px;
-            line-height: 24px;
-            color: #333333;
-            margin-bottom: 0px;
-        }
-
-        .question {
-            font-family: 'Noto Sans JP';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 20px;
-            line-height: 24px;
-            color: #333333;
-            margin-bottom: 0px;
-        }
-
-        .badge {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            padding: 5px 16px;
-            gap: 10px;
-            width: fit-content;
-            height: 29px;
-            background: #9D7333;
-            border-radius: 5px;
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 19px;
-            color: #FFFFFF;
-        }
-    }
-
-    .accordion-body {
-        background: #fff;
-        padding: 0px 60px 10px;
-
-        p {
-            font-family: 'Noto Sans JP';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 150%;
-            color: #333333;
-            margin-bottom: 10px;
-        }
-    }
-
-    .custom-accordion {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .accordion-icon {
-        width: 20px;
-        height: auto;
-        transition: transform 0.3s ease;
-    }
-
-    .custom-accordion:not(.collapsed) .accordion-icon {
-        transform: rotate(90deg);
-    }
-}
-
-.company-profile {
-    padding: 64px 0px;
-
-    .content-section {
-        .point {
-            padding: 16px 10px;
-            border-bottom: 1px solid #D9D9D9;
-
-            p {
-                font-family: 'Noto Sans JP';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 19px;
-                color: #333333;
-                margin-bottom: 0px;
-            }
-        }
-    }
-
+  }
 }

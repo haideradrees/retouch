@@ -1,834 +1,1028 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <!-- bootstrap 5-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- bootstrap 5-->
 
     <!-- aos animation -->
     <script src="assets/css/aos.js"></script>
-    <link href="assets/css/aos.css" rel="stylesheet">
+    <link href="assets/css/aos.css" rel="stylesheet" />
     <!-- aos animation -->
 
     <!-- css -->
-    <link href="assets/css/hover.css" rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet">
-    <link href="assets/css/responsive.css" rel="stylesheet">
+    <link href="assets/css/hover.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/responsive.css" rel="stylesheet" />
     <!-- css -->
 
-    <link href="assets/images/fav.png" rel="icon" type="image/x-icon">
+    <link href="assets/images/fav.png" rel="icon" type="image/x-icon" />
     <title>Retouch</title>
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <div class="layout">
-        <section class="header">
-            <nav class="navbar navbar-expand-lg ">
-                <a class="navbar-brand" href="#">
-                    <img src="assets/images/logo.svg" class="logo" alt="">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+      <section class="header">
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="#">
+            <img src="assets/images/logo.svg" class="logo" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul
+              class="navbar-nav ms-auto my-lg-0 navbar-nav-scroll"
+              style="--bs-scroll-height: 100px"
+            >
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >在籍馬一覧</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">会員募集について</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">寄付・単発支援</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">馬の購入・預託</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">社長コラム</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </section>
+      <section class="social-links">
+        <a href="" class="social s1">
+          <img src="assets/images/s1.svg" alt="" />
+        </a>
+        <a href="" class="social s2">
+          <img src="assets/images/s2.svg" alt="" />
+        </a>
+        <a href="" class="social s3">
+          <img src="assets/images/s3.svg" alt="" />
+        </a>
+        <a href="" class="social s4">
+          <img src="assets/images/s4.svg" alt="" />
+        </a>
+      </section>
+      <section class="hero-section">
+        <div class="slider">
+          <div
+            class="slide"
+            style="background-image: url(assets/images/slide1.png)"
+          ></div>
+          <!-- <div
+            class="slide"
+            style="background-image: url(assets/images/slide2.png)"
+          ></div>
+          <div
+            class="slide"
+            style="background-image: url(assets/images/slide3.png)"
+          ></div>
+          <div
+            class="slide"
+            style="background-image: url(assets/images/slide4.png)"
+          ></div> -->
+        </div>
+        <div class="hero-content">
+          <h1>その命に、もう一度フィールドを。</h1>
+        </div>
+      </section>
+      <section class="about-section">
+        <div class="md-container">
+          <div class="about-content">
+            <div class="center-heading">
+              <img src="assets/images/horse.svg" class="horse" alt="" />
+              <h3>Retouch（リタッチ）とは？</h3>
+              <h5>
+                引退馬から肉用馬となった馬の救済<br />皆様と共に馬たちに生きる道を…
+              </h5>
+            </div>
+            <p>
+              Retouch（リタッチ）とは、引退した競走馬たちが肥育場（肉にするために肥らせる場）で過ごしている馬たちを保護し、乗馬をはじめ教育・観光・福祉の分野で活躍できる機会を提供することを目的とした引退競走馬の支援団体として活動を行っています。また、Retouch（リタッチ）という名称は、<span>
+                「（馬に）再び手を差しのべる＝リタッチ」</span
+              >という意味を込めて名付けられました。
+            </p>
+            <p>
+              競走馬として活躍しているサラブレッドは、食用として飼育される動物とは性質が異なり、競走馬は血統や配合を考え「走らせるために産ませてきた」という背景に、人間の都合や期待が大きく関わっているものと承知しています。
+              <br />
+              そのため、走るというフィールドだけで、その結果を残せなかった馬たちが、もう必要ないから「肉にされる」という現実は、本当に心が痛むものです。例え、早く走れなくても
+              <span
+                >「乗馬の楽しさを私たちに提供できる馬」「馬術競技馬としてのセンスを持つ馬」「ホースセラピーや観光乗馬に最適な馬」など、馬の個性や特性を伸ばしそれを評価すれば必ず生きていく道は広がっていくと私たちは考えています。</span
+              >
+            </p>
+            <p>
+              競走馬に関わる生産者、育成スタッフ、騎手、厩務員、調教師など、第一線で働く人々の多くは、馬への深い愛情を持ってこの仕事に携わっている方がほとんどで、馬を「肉にする」ことを望んでいる人などいません。確かに、馬の命の最終的な判断と責任は馬主にあります。しかし、それを馬主だけの責任にするのではなく、競馬という産業を支え、楽しんできた社会全体で、引退した馬たちの命を守る仕組みを築くべく、このRetouch活動を通じて皆様と共に、<span>
+                『引退馬の保護』の必要性</span
+              >を社会に呼びかけていくことが大切だと考えています。
+            </p>
+            <p>
+              「馬を癒すことによって、私たちが逆に馬から癒されている」「私たちが馬に教えていると思っている間に、実は馬たちから多くのことを学んでいる」という体験は、日々の中で多くあります。誰かのため、何かのために行うという事ではなく、<span>
+                お互いが「今を生きるために支えあう事を共感」し合える</span
+              >ことこそ、このRetouch（リタッチ）活動を通じて、共感して頂ける皆様と共に、命に寄り添いながら、これからも活動を続けていきます。皆様と一緒に、この活動を広めていきながら、＂引退馬の行く末＂＂引退競走馬の余生＂が、馬たちにとって安心できるものになるまで、Retouch（リタッチ）活動は進めます。
+            </p>
+            <div class="bottom-right">
+              <h6>Retouch（リタッチ）代表　野口　佳槻</h6>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-images">
+          <img src="assets/images/h-left.png" class="h-left" alt="" />
+          <img src="assets/images/h-right.png" class="h-right" alt="" />
+        </div>
+      </section>
+      <section class="list-of-horses">
+        <div class="lg-container">
+          <div class="center-heading">
+            <img src="assets/images/horse.svg" class="horse" alt="" />
+            <h3>在籍馬一覧</h3>
+          </div>
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="horse-card">
+                <div class="banner">
+                  <img src="assets/images/horse-card.png" alt="" />
+                </div>
+                <h5>（馬の名前）</h5>
+                <div class="tags">
+                  <span class="tag"> カテゴリ名 </span>
+                  <span class="tag"> カテゴリ名 </span>
+                  <span class="tag"> カテゴリ名 </span>
+                </div>
+                <div class="tags">
+                  <span class="tag"> カテゴリ名 </span>
+                  <span class="tag"> カテゴリ名 </span>
+                  <span class="tag"> カテゴリ名 </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="horse-card">
+                <div class="banner">
+                  <img src="assets/images/horse-card.png" alt="" />
+                </div>
+                <h5>（馬の名前）</h5>
+                <div class="tags">
+                  <span class="tag"> カテゴリ名 </span>
+                  <span class="tag"> カテゴリ名 </span>
+                  <span class="tag"> カテゴリ名 </span>
+                </div>
+                <div class="tags">
+                  <span class="tag"> カテゴリ名 </span>
+                  <span class="tag"> カテゴリ名 </span>
+                  <span class="tag"> カテゴリ名 </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="horse-card">
+                <div class="banner">
+                  <img src="assets/images/horse-card.png" alt="" />
+                </div>
+                <h5>（馬の名前）</h5>
+                <div class="tags">
+                  <span class="tag"> カテゴリ名 </span>
+                  <span class="tag"> カテゴリ名 </span>
+                  <span class="tag"> カテゴリ名 </span>
+                </div>
+                <div class="tags">
+                  <span class="tag"> カテゴリ名 </span>
+                  <span class="tag"> カテゴリ名 </span>
+                  <span class="tag"> カテゴリ名 </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="horse-card">
+                <div class="banner">
+                  <img src="assets/images/horse-card.png" alt="" />
+                </div>
+                <h5>（馬の名前）</h5>
+                <div class="tags">
+                  <span class="tag"> カテゴリ名 </span>
+                  <span class="tag"> カテゴリ名 </span>
+                  <span class="tag"> カテゴリ名 </span>
+                </div>
+                <div class="tags">
+                  <span class="tag"> カテゴリ名 </span>
+                  <span class="tag"> カテゴリ名 </span>
+                  <span class="tag"> カテゴリ名 </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bottom-btn">
+            <div class="play-btn">
+              <div class="play">
+                <svg
+                  width="19"
+                  height="22"
+                  viewBox="0 0 19 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.000122041 0L18.7501 10.8253L0.000122351 21.6506L0.000122041 0Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+              <div class="btn-light">もっと見る</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="ranking">
+        <div class="md-container">
+          <div class="center-heading">
+            <img src="assets/images/horse.svg" class="horse" alt="" />
+            <h3>ランキング</h3>
+            <p>
+              現在、Retouchに所属する馬たちへの支援口数に基づいて、ランキング形式で公開しています。
+              <br />
+              これにより、支援者の皆様がどの馬にどれだけ支援が集まっているかを確認でき、支援の輪が広がる仕組みになっています。
+              <br />
+              支援お願いランキングは、支援口数が少ない馬ですので、是非、一口支援のご協力をお願いいたします。
+            </p>
+            <p>
+              一口支援のお申込みは、<span> こちらのページ</span
+              >をご参照ください。
+            </p>
+          </div>
+          <div class="ranking-section">
+            <div class="card-heading">
+              <span> 支援お願い！ランキング </span>
+            </div>
+            <div class="ranking-cards-row">
+              <div class="ranking-card">
+                <div class="badge">
+                  <img src="assets/images/r-1.png" alt="" />
+                </div>
+                <div class="banner">
+                  <img src="assets/images/ranking-h.png" alt="" />
+                </div>
+                <h4>（馬の名前）</h4>
+              </div>
+              <div class="ranking-card">
+                <div class="badge">
+                  <img src="assets/images/r-2.png" alt="" />
+                </div>
+                <div class="banner">
+                  <img src="assets/images/ranking-h.png" alt="" />
+                </div>
+                <h4>（馬の名前）</h4>
+              </div>
+              <div class="ranking-card">
+                <div class="badge">
+                  <img src="assets/images/r-3.png" alt="" />
+                </div>
+                <div class="banner">
+                  <img src="assets/images/ranking-h.png" alt="" />
+                </div>
+                <h4>（馬の名前）</h4>
+              </div>
+              <div class="ranking-card">
+                <div class="badge">
+                  <p>No.4</p>
+                </div>
+                <div class="banner">
+                  <img src="assets/images/ranking-h.png" alt="" />
+                </div>
+                <h4>（馬の名前）</h4>
+              </div>
+              <div class="ranking-card">
+                <div class="badge">
+                  <p>No.5</p>
+                </div>
+                <div class="banner">
+                  <img src="assets/images/ranking-h.png" alt="" />
+                </div>
+                <h4>（馬の名前）</h4>
+              </div>
+            </div>
+          </div>
+          <div class="ranking-section">
+            <div class="card-heading">
+              <span> 支援お願い！ランキング </span>
+            </div>
+            <div class="ranking-cards-row">
+              <div class="ranking-card">
+                <div class="badge">
+                  <img src="assets/images/r-1.png" alt="" />
+                </div>
+                <div class="banner">
+                  <img src="assets/images/ranking-h.png" alt="" />
+                </div>
+                <h4>（馬の名前）</h4>
+              </div>
+              <div class="ranking-card">
+                <div class="badge">
+                  <img src="assets/images/r-2.png" alt="" />
+                </div>
+                <div class="banner">
+                  <img src="assets/images/ranking-h.png" alt="" />
+                </div>
+                <h4>（馬の名前）</h4>
+              </div>
+              <div class="ranking-card">
+                <div class="badge">
+                  <img src="assets/images/r-3.png" alt="" />
+                </div>
+                <div class="banner">
+                  <img src="assets/images/ranking-h.png" alt="" />
+                </div>
+                <h4>（馬の名前）</h4>
+              </div>
+              <div class="ranking-card">
+                <div class="badge">
+                  <p>No.4</p>
+                </div>
+                <div class="banner">
+                  <img src="assets/images/ranking-h.png" alt="" />
+                </div>
+                <h4>（馬の名前）</h4>
+              </div>
+              <div class="ranking-card">
+                <div class="badge">
+                  <p>No.5</p>
+                </div>
+                <div class="banner">
+                  <img src="assets/images/ranking-h.png" alt="" />
+                </div>
+                <h4>（馬の名前）</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="support-methods">
+        <div class="md-container">
+          <div class="center-heading">
+            <img src="assets/images/horse.svg" class="horse" alt="" />
+            <h3>支援方法について</h3>
+            <h5>Retouchは、ひとつひとつの命に寄り添う活動です。</h5>
+            <p>
+              Retouchは、保護された動物たちが安心して暮らせる環境を整え、彼らの命の尊厳を守るために活動しています。私たちは、動物たちの「もう一度生きるチャンス」を支えるために、日々現場で奮闘しています。この活動は、皆さまからの温かなご支援によって支えられています。
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="support-card">
+                <div class="heading">
+                  <h3>一口支援</h3>
+                  <p>（継続的なご支援）</p>
+                </div>
+                <div class="card-inner">
+                  <p>
+                    毎月定額でご支援いただく方法です。<br />継続的なご支援は、動物たちの医療費や飼育環境の維持、緊急保護への対応など、安定した活動の基盤となります。
+                  </p>
+                  <div class="buttets">
+                    <div class="bullet">
+                      <img src="assets/images/check.svg" class="check" alt="" />
+                      <span>
+                        月額１口12,000円〜（複数口のご支援も可能です）
+                      </span>
+                    </div>
+                    <div class="bullet">
+                      <img src="assets/images/check.svg" class="check" alt="" />
+                      <span> クレジットカード・口座振替に対応 </span>
+                    </div>
+                    <div class="bullet">
+                      <img src="assets/images/check.svg" class="check" alt="" />
+                      <span>
+                        ご支援者様には、活動報告や保護動物の近況を定期的にお届けします
+                      </span>
+                    </div>
+                  </div>
+                  <div class="card-bottom">
+                    <button class="btn btn-support">
+                      申込みはこちら
+                      <i class="fa-sharp fa-solid fa-caret-right"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="support-card">
+                <div class="heading">
+                  <h3>Retouchメンバー制度</h3>
+                </div>
+                <div class="card-inner">
+                  <p>
+                    引退馬の保護活動にご賛同いただける皆様に向けて、入会金無料で以下の3種類のメンバー制度をご用意しています。
+                    （※すべての会員種別で特に特典内容等に差はありません。）
+                  </p>
+                  <div class="buttets">
+                    <div class="bullet">
+                      <img src="assets/images/check.svg" class="check" alt="" />
+                      <span> メンバーズ会員（月会費 1,800円） </span>
+                    </div>
+                    <div class="bullet">
+                      <img src="assets/images/check.svg" class="check" alt="" />
+                      <span> サポーター会員（月会費 3,600円） </span>
+                    </div>
+                    <div class="bullet">
+                      <img src="assets/images/check.svg" class="check" alt="" />
+                      <span> リェリーフ会員（月会費 7,200円） </span>
+                    </div>
+                  </div>
+                  <div class="card-bottom">
+                    <button class="btn btn-support">
+                      申込みはこちら
+                      <i class="fa-sharp fa-solid fa-caret-right"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="support-card">
+                <div class="heading">
+                  <h3>単発支援</h3>
+                  <p>（その都度のご支援）</p>
+                </div>
+                <div class="card-inner">
+                  <p>
+                    ご自身のタイミングで、自由な金額をご支援いただけます。
+                    <br />
+                    「今月は応援したい」「特定の保護活動に協力したい」など、柔軟なご支援が可能です。
+                  </p>
+                  <div class="buttets">
+                    <div class="bullet">
+                      <img src="assets/images/check.svg" class="check" alt="" />
+                      <span> 任意の金額でご支援可能 </span>
+                    </div>
+                    <div class="bullet">
+                      <img src="assets/images/check.svg" class="check" alt="" />
+                      <span> 銀行振込に対応 </span>
+                    </div>
+                  </div>
+                  <div class="card-bottom">
+                    <button class="btn btn-support">
+                      申込みはこちら
+                      <i class="fa-sharp fa-solid fa-caret-right"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="faq-section">
+        <div class="sm-container">
+          <div class="center-heading">
+            <img src="assets/images/horse.svg" class="horse" alt="" />
+            <h3>イベント・体験会案内</h3>
+          </div>
+          <div class="accordion" id="faq-accordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed custom-accordion"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse1"
+                >
+                  <div class="content">
+                    <p class="date">2026.02.01</p>
+                    <span class="badge">Event</span>
+                    <p class="question">
+                      令和7年 見学会＆懇談会イベントのお知らせ
+                    </p>
+                  </div>
+
+                  <!-- Arrow Image -->
+                  <img
+                    src="assets/images/faq-arrow.svg"
+                    class="accordion-icon"
+                    alt="arrow"
+                  />
                 </button>
-                <div class="collapse navbar-collapse" id="navbarScroll">
-                    <ul class="navbar-nav ms-auto  my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">在籍馬一覧</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">会員募集について</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">寄付・単発支援</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">馬の購入・預託</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">社長コラム</a>
-                        </li>
-                    </ul>
+              </h2>
+
+              <div
+                id="collapse1"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faq-accordion"
+              >
+                <div class="accordion-body">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Tempore, laudantium voluptatum? Et rerum iusto libero.
+                    Adipisci aut cumque amet aperiam obcaecati, corporis minima
+                    reiciendis consectetur dolores veritatis consequuntur rerum
+                    sequi.
+                  </p>
                 </div>
-            </nav>
-        </section>
-        <section class="social-links">
-            <a href="" class="social s1">
-                <img src="assets/images/s1.svg" alt="">
-            </a>
-            <a href="" class="social s2">
-                <img src="assets/images/s2.svg" alt="">
-            </a>
-            <a href="" class="social s3">
-                <img src="assets/images/s3.svg" alt="">
-            </a>
-            <a href="" class="social s4">
-                <img src="assets/images/s4.svg" alt="">
-            </a>
-        </section>
-        <section class="hero-section">
-            <div class="slider">
-                <div class="slide" style="background-image: url('assets/images/slide1.png');"></div>
-                <div class="slide" style="background-image: url('assets/images/slide2.png');"></div>
-                <div class="slide" style="background-image: url('assets/images/slide3.png');"></div>
-                <div class="slide" style="background-image: url('assets/images/slide4.png');"></div>
+              </div>
             </div>
-            <div class="hero-content">
-                <h1>
-                    その命に、もう一度フィールドを。
-                </h1>
-            </div>
-        </section>
-        <section class="about-section">
-            <div class="md-container">
-                <div class="about-content">
-                    <div class="center-heading">
-                        <img src="assets/images/horse.svg" class="horse" alt="">
-                        <h3>
-                            Retouch（リタッチ）とは？
-                        </h3>
-                        <h5>
-                            引退馬から肉用馬となった馬の救済<br>皆様と共に馬たちに生きる道を…
-                        </h5>
-                    </div>
-                    <p>
-                        Retouch（リタッチ）とは、引退した競走馬たちが肥育場（肉にするために肥らせる場）で過ごしている馬たちを保護し、乗馬をはじめ教育・観光・福祉の分野で活躍できる機会を提供することを目的とした引退競走馬の支援団体として活動を行っています。また、Retouch（リタッチ）という名称は、<span>
-                            「（馬に）再び手を差しのべる＝リタッチ」</span>という意味を込めて名付けられました。
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed custom-accordion"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse2"
+                >
+                  <div class="content">
+                    <p class="date">2026.02.01</p>
+                    <span class="badge">Event</span>
+                    <p class="question">
+                      令和7年 見学会＆懇談会イベントのお知らせ
                     </p>
-                    <p>
-                        競走馬として活躍しているサラブレッドは、食用として飼育される動物とは性質が異なり、競走馬は血統や配合を考え「走らせるために産ませてきた」という背景に、人間の都合や期待が大きく関わっているものと承知しています。
-                        <br>
-                        そのため、走るというフィールドだけで、その結果を残せなかった馬たちが、もう必要ないから「肉にされる」という現実は、本当に心が痛むものです。例え、早く走れなくても
-                        <span>「乗馬の楽しさを私たちに提供できる馬」「馬術競技馬としてのセンスを持つ馬」「ホースセラピーや観光乗馬に最適な馬」など、馬の個性や特性を伸ばしそれを評価すれば必ず生きていく道は広がっていくと私たちは考えています。</span>
+                  </div>
+
+                  <!-- Arrow Image -->
+                  <img
+                    src="assets/images/faq-arrow.svg"
+                    class="accordion-icon"
+                    alt="arrow"
+                  />
+                </button>
+              </h2>
+
+              <div
+                id="collapse2"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faq-accordion"
+              >
+                <div class="accordion-body">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Tempore, laudantium voluptatum? Et rerum iusto libero.
+                    Adipisci aut cumque amet aperiam obcaecati, corporis minima
+                    reiciendis consectetur dolores veritatis consequuntur rerum
+                    sequi.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed custom-accordion"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse3"
+                >
+                  <div class="content">
+                    <p class="date">2026.02.01</p>
+                    <span class="badge">Event</span>
+                    <p class="question">
+                      令和7年 見学会＆懇談会イベントのお知らせ
                     </p>
-                    <p>
-                        競走馬に関わる生産者、育成スタッフ、騎手、厩務員、調教師など、第一線で働く人々の多くは、馬への深い愛情を持ってこの仕事に携わっている方がほとんどで、馬を「肉にする」ことを望んでいる人などいません。確かに、馬の命の最終的な判断と責任は馬主にあります。しかし、それを馬主だけの責任にするのではなく、競馬という産業を支え、楽しんできた社会全体で、引退した馬たちの命を守る仕組みを築くべく、このRetouch活動を通じて皆様と共に、<span>
-                            『引退馬の保護』の必要性</span>を社会に呼びかけていくことが大切だと考えています。
+                  </div>
+
+                  <!-- Arrow Image -->
+                  <img
+                    src="assets/images/faq-arrow.svg"
+                    class="accordion-icon"
+                    alt="arrow"
+                  />
+                </button>
+              </h2>
+
+              <div
+                id="collapse3"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faq-accordion"
+              >
+                <div class="accordion-body">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Tempore, laudantium voluptatum? Et rerum iusto libero.
+                    Adipisci aut cumque amet aperiam obcaecati, corporis minima
+                    reiciendis consectetur dolores veritatis consequuntur rerum
+                    sequi.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed custom-accordion"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse4"
+                >
+                  <div class="content">
+                    <p class="date">2026.02.01</p>
+                    <span class="badge">Event</span>
+                    <p class="question">
+                      令和7年 見学会＆懇談会イベントのお知らせ
                     </p>
-                    <p>
-                        「馬を癒すことによって、私たちが逆に馬から癒されている」「私たちが馬に教えていると思っている間に、実は馬たちから多くのことを学んでいる」という体験は、日々の中で多くあります。誰かのため、何かのために行うという事ではなく、<span>
-                            お互いが「今を生きるために支えあう事を共感」し合える</span>ことこそ、このRetouch（リタッチ）活動を通じて、共感して頂ける皆様と共に、命に寄り添いながら、これからも活動を続けていきます。皆様と一緒に、この活動を広めていきながら、＂引退馬の行く末＂＂引退競走馬の余生＂が、馬たちにとって安心できるものになるまで、Retouch（リタッチ）活動は進めます。
+                  </div>
+
+                  <!-- Arrow Image -->
+                  <img
+                    src="assets/images/faq-arrow.svg"
+                    class="accordion-icon"
+                    alt="arrow"
+                  />
+                </button>
+              </h2>
+
+              <div
+                id="collapse4"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faq-accordion"
+              >
+                <div class="accordion-body">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Tempore, laudantium voluptatum? Et rerum iusto libero.
+                    Adipisci aut cumque amet aperiam obcaecati, corporis minima
+                    reiciendis consectetur dolores veritatis consequuntur rerum
+                    sequi.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed custom-accordion"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse5"
+                >
+                  <div class="content">
+                    <p class="date">2026.02.01</p>
+                    <span class="badge">Event</span>
+                    <p class="question">
+                      令和7年 見学会＆懇談会イベントのお知らせ
                     </p>
-                    <div class="bottom-right">
-                        <h6>
-                            Retouch（リタッチ）代表　野口　佳槻
-                        </h6>
-                    </div>
+                  </div>
+
+                  <!-- Arrow Image -->
+                  <img
+                    src="assets/images/faq-arrow.svg"
+                    class="accordion-icon"
+                    alt="arrow"
+                  />
+                </button>
+              </h2>
+
+              <div
+                id="collapse5"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faq-accordion"
+              >
+                <div class="accordion-body">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Tempore, laudantium voluptatum? Et rerum iusto libero.
+                    Adipisci aut cumque amet aperiam obcaecati, corporis minima
+                    reiciendis consectetur dolores veritatis consequuntur rerum
+                    sequi.
+                  </p>
                 </div>
+              </div>
             </div>
-            <div class="bottom-images">
-                <img src="assets/images/h-left.png" class="h-left" alt="">
-                <img src="assets/images/h-right.png" class="h-right" alt="">
+          </div>
+        </div>
+      </section>
+      <section class="company-profile">
+        <div class="md-container">
+          <div class="center-heading">
+            <img src="assets/images/horse.svg" class="horse" alt="" />
+            <h3>会社概要</h3>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="content-section">
+                <div class="point">
+                  <div class="row">
+                    <div class="col-lg-2">
+                      <p>団体名</p>
+                    </div>
+                    <div class="col-lg-10">
+                      <p>引退馬支援団体　Retouch（リタッチ）</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="point">
+                  <div class="row">
+                    <div class="col-lg-2">
+                      <p>代表者</p>
+                    </div>
+                    <div class="col-lg-10">
+                      <p>野口 佳槻（のぐち よしき）</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="point">
+                  <div class="row">
+                    <div class="col-lg-2">
+                      <p>設立</p>
+                    </div>
+                    <div class="col-lg-10">
+                      <p>令和5年11月（代表交代に伴い再始動）</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="point">
+                  <div class="row">
+                    <div class="col-lg-2">
+                      <p>連絡先</p>
+                    </div>
+                    <div class="col-lg-10">
+                      <p>
+                        TEL 050-6875-3336
+                        <br />
+                        （リタッチ担当者をお呼び出しください）
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="point">
+                  <div class="row">
+                    <div class="col-lg-2">
+                      <p>所在地</p>
+                    </div>
+                    <div class="col-lg-10">
+                      <p>〒586-0031 大阪府河内長野市高向2001 ホースレスト内</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="point">
+                  <div class="row">
+                    <div class="col-lg-2">
+                      <p>活動拠点</p>
+                    </div>
+                    <div class="col-lg-10">
+                      <p>
+                        千葉県八街市・山武市／大阪府河内長野市
+                        <br />
+                        （※山武市雨坪10番地　東関東馬事高等学院内）
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-        </section>
-        <section class="list-of-horses">
-            <div class="lg-container">
-                <div class="center-heading">
-                    <img src="assets/images/horse.svg" class="horse" alt="">
-                    <h3>
-                        在籍馬一覧
-                    </h3>
-                </div>
-                <div class="row">
-                    <div class="col-lg-3">
-                        <div class="horse-card">
-                            <div class="banner">
-                                <img src="assets/images/horse-card.png" alt="">
-                            </div>
-                            <h5>
-                                （馬の名前）
-                            </h5>
-                            <div class="tags">
-                                <span class="tag">
-                                    カテゴリ名
-                                </span>
-                                <span class="tag">
-                                    カテゴリ名
-                                </span>
-                                <span class="tag">
-                                    カテゴリ名
-                                </span>
-                            </div>
-                            <div class="tags">
-                                <span class="tag">
-                                    カテゴリ名
-                                </span>
-                                <span class="tag">
-                                    カテゴリ名
-                                </span>
-                                <span class="tag">
-                                    カテゴリ名
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="horse-card">
-                            <div class="banner">
-                                <img src="assets/images/horse-card.png" alt="">
-                            </div>
-                            <h5>
-                                （馬の名前）
-                            </h5>
-                            <div class="tags">
-                                <span class="tag">
-                                    カテゴリ名
-                                </span>
-                                <span class="tag">
-                                    カテゴリ名
-                                </span>
-                                <span class="tag">
-                                    カテゴリ名
-                                </span>
-                            </div>
-                            <div class="tags">
-                                <span class="tag">
-                                    カテゴリ名
-                                </span>
-                                <span class="tag">
-                                    カテゴリ名
-                                </span>
-                                <span class="tag">
-                                    カテゴリ名
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="horse-card">
-                            <div class="banner">
-                                <img src="assets/images/horse-card.png" alt="">
-                            </div>
-                            <h5>
-                                （馬の名前）
-                            </h5>
-                            <div class="tags">
-                                <span class="tag">
-                                    カテゴリ名
-                                </span>
-                                <span class="tag">
-                                    カテゴリ名
-                                </span>
-                                <span class="tag">
-                                    カテゴリ名
-                                </span>
-                            </div>
-                            <div class="tags">
-                                <span class="tag">
-                                    カテゴリ名
-                                </span>
-                                <span class="tag">
-                                    カテゴリ名
-                                </span>
-                                <span class="tag">
-                                    カテゴリ名
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="horse-card">
-                            <div class="banner">
-                                <img src="assets/images/horse-card.png" alt="">
-                            </div>
-                            <h5>
-                                （馬の名前）
-                            </h5>
-                            <div class="tags">
-                                <span class="tag">
-                                    カテゴリ名
-                                </span>
-                                <span class="tag">
-                                    カテゴリ名
-                                </span>
-                                <span class="tag">
-                                    カテゴリ名
-                                </span>
-                            </div>
-                            <div class="tags">
-                                <span class="tag">
-                                    カテゴリ名
-                                </span>
-                                <span class="tag">
-                                    カテゴリ名
-                                </span>
-                                <span class="tag">
-                                    カテゴリ名
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="bottom-btn">
-                    <div class="play-btn">
-                        <div class="play">
-                            <svg width="19" height="22" viewBox="0 0 19 22" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0.000122041 0L18.7501 10.8253L0.000122351 21.6506L0.000122041 0Z"
-                                    fill="white" />
-                            </svg>
-                        </div>
-                        <div class=" btn-light">もっと見る</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="ranking">
-            <div class="md-container">
-                <div class="center-heading">
-                    <img src="assets/images/horse.svg" class="horse" alt="">
-                    <h3>
-                        ランキング
-                    </h3>
+            <div class="col-lg-6">
+              <div class="tabs-section">
+                <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link active"
+                      id="pills-1-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-1"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-1"
+                      aria-selected="true"
+                    >
+                      活動目的
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="pills-2-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-2"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-2"
+                      aria-selected="false"
+                    >
+                      活動内容
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="pills-3-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-3"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-3"
+                      aria-selected="false"
+                    >
+                      組織の特徴
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="pills-4-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-4"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-4"
+                      aria-selected="false"
+                    >
+                      啓発活動
+                    </button>
+                  </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                  <div
+                    class="tab-pane fade show active"
+                    id="pills-1"
+                    role="tabpanel"
+                    aria-labelledby="pills-1-tab"
+                  >
                     <p>
-                        現在、Retouchに所属する馬たちへの支援口数に基づいて、ランキング形式で公開しています。
-                        <br>
-                        これにより、支援者の皆様がどの馬にどれだけ支援が集まっているかを確認でき、支援の輪が広がる仕組みになっています。
-                        <br>
-                        支援お願いランキングは、支援口数が少ない馬ですので、是非、一口支援のご協力をお願いいたします。
+                      Retouchは、引退した競走馬たちが肥育場で食肉用として過ごす現実に対し、「命をつなぐ」ことを目的とした支援団体です。競馬の舞台を退いた馬たちが、再び人と共に生きる道を歩めるよう、以下の取り組みを行っています。
                     </p>
+                    <div class="points">
+                      <img src="assets/images/check.svg" class="check" alt="" />
+                      <span> 肥育場からの馬の直接引き取り </span>
+                    </div>
+                    <div class="points">
+                      <img src="assets/images/check.svg" class="check" alt="" />
+                      <span>
+                        馬の個性に応じたリトレーニング（乗馬・観光・福祉分野への活用）
+                      </span>
+                    </div>
+                    <div class="points">
+                      <img src="assets/images/check.svg" class="check" alt="" />
+                      <span> 新たなオーナーへの譲渡支援 </span>
+                    </div>
+                    <div class="points">
+                      <img src="assets/images/check.svg" class="check" alt="" />
+                      <span> 継続支援型「1口支援馬制度」の運営 </span>
+                    </div>
+                    <div class="points">
+                      <img src="assets/images/check.svg" class="check" alt="" />
+                      <span>
+                        馬事学院との連携による教育的活用と命の学びの場の提供
+                      </span>
+                    </div>
+                    <div class="points">
+                      <img src="assets/images/check.svg" class="check" alt="" />
+                      <span> 引退競走馬の現状を広く伝える啓発活動 </span>
+                    </div>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="pills-2"
+                    role="tabpanel"
+                    aria-labelledby="pills-2-tab"
+                  >
+                    <div class="points">
+                      <img src="assets/images/check.svg" class="check" alt="" />
+                      <span>
+                        肥育場からの馬の直接救済（令和7年10月現在：累計35頭受け入れ）
+                      </span>
+                    </div>
+                    <div class="points">
+                      <img src="assets/images/check.svg" class="check" alt="" />
+                      <span>
+                        Retouchメンバー制度（4種の月額会員＋1口支援馬制度）
+                      </span>
+                    </div>
+                    <div class="points">
+                      <img src="assets/images/check.svg" class="check" alt="" />
+                      <span> 新たなオーナーへの譲渡支援 </span>
+                    </div>
+                    <div class="points">
+                      <img src="assets/images/check.svg" class="check" alt="" />
+                      <span> 千葉・大阪での見学会・懇談会の開催 </span>
+                    </div>
+                    <div class="points">
+                      <img src="assets/images/check.svg" class="check" alt="" />
+                      <span> 馬とのふれあいイベント、乗馬体験の提供 </span>
+                    </div>
+                    <div class="points">
+                      <img src="assets/images/check.svg" class="check" alt="" />
+                      <span>
+                        会員限定情報の公開（収支報告・馬の状況など）
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="pills-3"
+                    role="tabpanel"
+                    aria-labelledby="pills-3-tab"
+                  >
+                    <div class="points">
+                      <img src="assets/images/check.svg" class="check" alt="" />
+                      <span>
+                        会費の約80％を馬の救済活動に充当（約20％は事務・運営費）
+                      </span>
+                    </div>
+                    <div class="points">
+                      <img src="assets/images/check.svg" class="check" alt="" />
+                      <span>
+                        馬事学院との連携により、教育・福祉・観光分野へも展開
+                      </span>
+                    </div>
+                    <div class="points">
+                      <img src="assets/images/check.svg" class="check" alt="" />
+                      <span> 支援者との対話を重視した運営スタイル </span>
+                    </div>
+                    <div class="points">
+                      <img src="assets/images/check.svg" class="check" alt="" />
+                      <span>
+                        馬の命と人との関係性を育む「共生型支援モデル」
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="pills-4"
+                    role="tabpanel"
+                    aria-labelledby="pills-4-tab"
+                  >
                     <p>
-                        一口支援のお申込みは、<span> こちらのページ</span>をご参照ください。
+                      Retouchでは、引退競走馬の多くが肥育場に送られている現実を広く認知してもらうため、以下の活動も行っています。
                     </p>
+                    <div class="points">
+                      <img src="assets/images/check.svg" class="check" alt="" />
+                      <span> YouTubeを活用した啓発動画の配信 </span>
+                    </div>
+                    <div class="points">
+                      <img src="assets/images/check.svg" class="check" alt="" />
+                      <span>
+                        農林水産省、JRA、NAR地方競馬、自治体などへの政策提言・協議
+                      </span>
+                    </div>
+                    <div class="points">
+                      <img src="assets/images/check.svg" class="check" alt="" />
+                      <span> 命の尊厳と共生の価値を伝える広報活動 </span>
+                    </div>
+                  </div>
                 </div>
-                <div class="ranking-section">
-                    <div class="card-heading">
-                        <span>
-                            支援お願い！ランキング
-                        </span>
-                    </div>
-                    <div class="ranking-cards-row">
-                        <div class="ranking-card">
-                            <div class="badge">
-                                <img src="assets/images/r-1.png" alt="">
-                            </div>
-                            <div class="banner">
-                                <img src="assets/images/ranking-h.png" alt="">
-                            </div>
-                            <h4>
-                                （馬の名前）
-                            </h4>
-                        </div>
-                        <div class="ranking-card">
-                            <div class="badge">
-                                <img src="assets/images/r-2.png" alt="">
-                            </div>
-                            <div class="banner">
-                                <img src="assets/images/ranking-h.png" alt="">
-                            </div>
-                            <h4>
-                                （馬の名前）
-                            </h4>
-                        </div>
-                        <div class="ranking-card">
-                            <div class="badge">
-                                <img src="assets/images/r-3.png" alt="">
-                            </div>
-                            <div class="banner">
-                                <img src="assets/images/ranking-h.png" alt="">
-                            </div>
-                            <h4>
-                                （馬の名前）
-                            </h4>
-                        </div>
-                        <div class="ranking-card">
-                            <div class="badge">
-                                <p>
-                                    No.4
-                                </p>
-                            </div>
-                            <div class="banner">
-                                <img src="assets/images/ranking-h.png" alt="">
-                            </div>
-                            <h4>
-                                （馬の名前）
-                            </h4>
-                        </div>
-                        <div class="ranking-card">
-                            <div class="badge">
-                                <p>
-                                    No.5
-                                </p>
-                            </div>
-                            <div class="banner">
-                                <img src="assets/images/ranking-h.png" alt="">
-                            </div>
-                            <h4>
-                                （馬の名前）
-                            </h4>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="ranking-section">
-                    <div class="card-heading">
-                        <span>
-                            支援お願い！ランキング
-                        </span>
-                    </div>
-                    <div class="ranking-cards-row">
-                        <div class="ranking-card">
-                            <div class="badge">
-                                <img src="assets/images/r-1.png" alt="">
-                            </div>
-                            <div class="banner">
-                                <img src="assets/images/ranking-h.png" alt="">
-                            </div>
-                            <h4>
-                                （馬の名前）
-                            </h4>
-                        </div>
-                        <div class="ranking-card">
-                            <div class="badge">
-                                <img src="assets/images/r-2.png" alt="">
-                            </div>
-                            <div class="banner">
-                                <img src="assets/images/ranking-h.png" alt="">
-                            </div>
-                            <h4>
-                                （馬の名前）
-                            </h4>
-                        </div>
-                        <div class="ranking-card">
-                            <div class="badge">
-                                <img src="assets/images/r-3.png" alt="">
-                            </div>
-                            <div class="banner">
-                                <img src="assets/images/ranking-h.png" alt="">
-                            </div>
-                            <h4>
-                                （馬の名前）
-                            </h4>
-                        </div>
-                        <div class="ranking-card">
-                            <div class="badge">
-                                <p>
-                                    No.4
-                                </p>
-                            </div>
-                            <div class="banner">
-                                <img src="assets/images/ranking-h.png" alt="">
-                            </div>
-                            <h4>
-                                （馬の名前）
-                            </h4>
-                        </div>
-                        <div class="ranking-card">
-                            <div class="badge">
-                                <p>
-                                    No.5
-                                </p>
-                            </div>
-                            <div class="banner">
-                                <img src="assets/images/ranking-h.png" alt="">
-                            </div>
-                            <h4>
-                                （馬の名前）
-                            </h4>
-                        </div>
-
-                    </div>
-                </div>
+              </div>
             </div>
-        </section>
-        <section class="support-methods">
-            <div class="md-container">
-                <div class="center-heading">
-                    <img src="assets/images/horse.svg" class="horse" alt="">
-                    <h3>
-                        支援方法について
-                    </h3>
-                    <h5>
-                        Retouchは、ひとつひとつの命に寄り添う活動です。
-                    </h5>
-                    <p>
-                        Retouchは、保護された動物たちが安心して暮らせる環境を整え、彼らの命の尊厳を守るために活動しています。私たちは、動物たちの「もう一度生きるチャンス」を支えるために、日々現場で奮闘しています。この活動は、皆さまからの温かなご支援によって支えられています。
-                    </p>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="support-card">
-                            <div class="heading">
-                                <h3>
-                                    一口支援
-                                </h3>
-                                <p>
-                                    （継続的なご支援）
-                                </p>
-                            </div>
-                            <div class="card-inner">
-                                <p>
-                                    毎月定額でご支援いただく方法です。<br>継続的なご支援は、動物たちの医療費や飼育環境の維持、緊急保護への対応など、安定した活動の基盤となります。
-                                </p>
-                                <div class="buttets">
-                                    <div class="bullet">
-                                        <img src="assets/images/check.svg" class="check" alt="">
-                                        <span>
-                                            月額１口12,000円〜（複数口のご支援も可能です）
-                                        </span>
-                                    </div>
-                                    <div class="bullet">
-                                        <img src="assets/images/check.svg" class="check" alt="">
-                                        <span>
-                                            クレジットカード・口座振替に対応
-                                        </span>
-                                    </div>
-                                    <div class="bullet">
-                                        <img src="assets/images/check.svg" class="check" alt="">
-                                        <span>
-                                            ご支援者様には、活動報告や保護動物の近況を定期的にお届けします
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="card-bottom">
-                                    <button class="btn btn-support">
-                                        申込みはこちら
-                                        <i class="fa-sharp fa-solid fa-caret-right"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="support-card">
-                            <div class="heading">
-                                <h3>
-                                    Retouchメンバー制度
-                                </h3>
-                            </div>
-                            <div class="card-inner">
-                                <p>
-                                    引退馬の保護活動にご賛同いただける皆様に向けて、入会金無料で以下の3種類のメンバー制度をご用意しています。
-                                    （※すべての会員種別で特に特典内容等に差はありません。）
-                                </p>
-                                <div class="buttets">
-
-                                    <div class="bullet">
-                                        <img src="assets/images/check.svg" class="check" alt="">
-                                        <span>
-                                            メンバーズ会員（月会費 1,800円）
-                                        </span>
-                                    </div>
-                                    <div class="bullet">
-                                        <img src="assets/images/check.svg" class="check" alt="">
-                                        <span>
-                                            サポーター会員（月会費 3,600円）
-                                        </span>
-                                    </div>
-                                    <div class="bullet">
-                                        <img src="assets/images/check.svg" class="check" alt="">
-                                        <span>
-                                            リェリーフ会員（月会費 7,200円）
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="card-bottom">
-                                    <button class="btn btn-support">
-                                        申込みはこちら
-                                        <i class="fa-sharp fa-solid fa-caret-right"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="support-card">
-                            <div class="heading">
-                                <h3>
-                                    単発支援
-                                </h3>
-                                <p>
-                                    （その都度のご支援）
-                                </p>
-                            </div>
-                            <div class="card-inner">
-                                <p>
-                                    ご自身のタイミングで、自由な金額をご支援いただけます。
-                                    <br>
-                                    「今月は応援したい」「特定の保護活動に協力したい」など、柔軟なご支援が可能です。
-                                </p>
-                                <div class="buttets">
-                                    <div class="bullet">
-                                        <img src="assets/images/check.svg" class="check" alt="">
-                                        <span>
-                                            任意の金額でご支援可能
-                                        </span>
-                                    </div>
-                                    <div class="bullet">
-                                        <img src="assets/images/check.svg" class="check" alt="">
-                                        <span>
-                                            銀行振込に対応
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="card-bottom">
-                                    <button class="btn btn-support">
-                                        申込みはこちら
-                                        <i class="fa-sharp fa-solid fa-caret-right"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="requests-section">
+            <h2>取材依頼・プレスリリース</h2>
+            <p>
+              Retouchの活動に関する取材・掲載をご希望の方は、上記の連絡先までご連絡ください。
+              <br />
+              写真・動画素材の提供、代表インタビュー、施設見学などもご相談可能です。
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="footer">
+        <div class="md-container">
+          <div class="footer-row">
+            <div class="footer-left">
+              <img src="assets/images/f-logo.svg" class="f-logo" alt="" />
+              <h4>引退馬の保護・肥育馬の保護</h4>
+              <p>引退馬保護 Retouch事務局</p>
+              <p>営業時間 : 11：00～16：00</p>
+              <p>TEL : 050-6875-3336</p>
             </div>
-        </section>
-        <section class="faq-section">
-            <div class="sm-container">
-                <div class="center-heading">
-                    <img src="assets/images/horse.svg" class="horse" alt="">
-                    <h3>
-                        イベント・体験会案内
-                    </h3>
-                </div>
-                <div class="accordion" id="faq-accordion">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed custom-accordion" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#collapse1">
-                                <div class="content">
-                                    <p class="date">
-                                        2026.02.01
-                                    </p>
-                                    <span class="badge">Event</span>
-                                    <p class="question">
-                                        令和7年 見学会＆懇談会イベントのお知らせ
-                                    </p>
-                                </div>
-
-                                <!-- Arrow Image -->
-                                <img src="assets/images/faq-arrow.svg" class="accordion-icon" alt="arrow">
-                            </button>
-                        </h2>
-
-                        <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#faq-accordion">
-                            <div class="accordion-body">
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, laudantium
-                                    voluptatum? Et rerum iusto libero. Adipisci aut cumque amet aperiam obcaecati,
-                                    corporis minima reiciendis consectetur dolores veritatis consequuntur rerum sequi.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed custom-accordion" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#collapse2">
-                                <div class="content">
-                                    <p class="date">
-                                        2026.02.01
-                                    </p>
-                                    <span class="badge">Event</span>
-                                    <p class="question">
-                                        令和7年 見学会＆懇談会イベントのお知らせ
-                                    </p>
-                                </div>
-
-                                <!-- Arrow Image -->
-                                <img src="assets/images/faq-arrow.svg" class="accordion-icon" alt="arrow">
-                            </button>
-                        </h2>
-
-                        <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#faq-accordion">
-                            <div class="accordion-body">
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, laudantium
-                                    voluptatum? Et rerum iusto libero. Adipisci aut cumque amet aperiam obcaecati,
-                                    corporis minima reiciendis consectetur dolores veritatis consequuntur rerum sequi.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed custom-accordion" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#collapse3">
-                                <div class="content">
-                                    <p class="date">
-                                        2026.02.01
-                                    </p>
-                                    <span class="badge">Event</span>
-                                    <p class="question">
-                                        令和7年 見学会＆懇談会イベントのお知らせ
-                                    </p>
-                                </div>
-
-                                <!-- Arrow Image -->
-                                <img src="assets/images/faq-arrow.svg" class="accordion-icon" alt="arrow">
-                            </button>
-                        </h2>
-
-                        <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#faq-accordion">
-                            <div class="accordion-body">
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, laudantium
-                                    voluptatum? Et rerum iusto libero. Adipisci aut cumque amet aperiam obcaecati,
-                                    corporis minima reiciendis consectetur dolores veritatis consequuntur rerum sequi.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed custom-accordion" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#collapse4">
-                                <div class="content">
-                                    <p class="date">
-                                        2026.02.01
-                                    </p>
-                                    <span class="badge">Event</span>
-                                    <p class="question">
-                                        令和7年 見学会＆懇談会イベントのお知らせ
-                                    </p>
-                                </div>
-
-                                <!-- Arrow Image -->
-                                <img src="assets/images/faq-arrow.svg" class="accordion-icon" alt="arrow">
-                            </button>
-                        </h2>
-
-                        <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#faq-accordion">
-                            <div class="accordion-body">
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, laudantium
-                                    voluptatum? Et rerum iusto libero. Adipisci aut cumque amet aperiam obcaecati,
-                                    corporis minima reiciendis consectetur dolores veritatis consequuntur rerum sequi.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed custom-accordion" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#collapse5">
-                                <div class="content">
-                                    <p class="date">
-                                        2026.02.01
-                                    </p>
-                                    <span class="badge">Event</span>
-                                    <p class="question">
-                                        令和7年 見学会＆懇談会イベントのお知らせ
-                                    </p>
-                                </div>
-
-                                <!-- Arrow Image -->
-                                <img src="assets/images/faq-arrow.svg" class="accordion-icon" alt="arrow">
-                            </button>
-                        </h2>
-
-                        <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#faq-accordion">
-                            <div class="accordion-body">
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, laudantium
-                                    voluptatum? Et rerum iusto libero. Adipisci aut cumque amet aperiam obcaecati,
-                                    corporis minima reiciendis consectetur dolores veritatis consequuntur rerum sequi.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="footer-right">
+              <a href="" class="nav-link">在籍馬一覧</a>
+              <a href="" class="nav-link">会員募集について</a>
+              <a href="" class="nav-link">寄付・単発支援</a>
+              <a href="" class="nav-link">馬の購入・預託</a>
+              <a href="" class="nav-link">代表コラム</a>
             </div>
-        </section>
-        <section class="company-profile">
-            <div class="md-container">
-                <div class="center-heading">
-                    <img src="assets/images/horse.svg" class="horse" alt="">
-                    <h3>
-                        会社概要
-                    </h3>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="content-section">
-                            <div class="point">
-                                <div class="row">
-                                    <div class="col-lg-2">
-                                        <p>団体名</p>
-                                    </div>
-                                    <div class="col-lg-10">
-                                        <p>引退馬支援団体　Retouch（リタッチ）</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="point">
-                                <div class="row">
-                                    <div class="col-lg-2">
-                                        <p>代表者</p>
-                                    </div>
-                                    <div class="col-lg-10">
-                                        <p>野口 佳槻（のぐち よしき）</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="point">
-                                <div class="row">
-                                    <div class="col-lg-2">
-                                        <p>設立</p>
-                                    </div>
-                                    <div class="col-lg-10">
-                                        <p>令和5年11月（代表交代に伴い再始動）</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="point">
-                                <div class="row">
-                                    <div class="col-lg-2">
-                                        <p>連絡先</p>
-                                    </div>
-                                    <div class="col-lg-10">
-                                        <p>TEL 050-6875-3336
-                                            <br>
-                                            （リタッチ担当者をお呼び出しください）
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="point">
-                                <div class="row">
-                                    <div class="col-lg-2">
-                                        <p>所在地</p>
-                                    </div>
-                                    <div class="col-lg-10">
-                                        <p>〒586-0031 大阪府河内長野市高向2001 ホースレスト内</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="point">
-                                <div class="row">
-                                    <div class="col-lg-2">
-                                        <p>活動拠点</p>
-                                    </div>
-                                    <div class="col-lg-10">
-                                        <p>千葉県八街市・山武市／大阪府河内長野市
-                                            <br>
-                                            （※山武市雨坪10番地　東関東馬事高等学院内）
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">000</div>
-                </div>
-            </div>
-        </section>
+          </div>
+          <div class="bottom">
+            <span>
+              Copyright 2026
+              <a href="">
+                引退馬保護／公式Retouch（リタッチ）｜引退馬の支援・肥育場での馬の保護
+              </a>
+              .All rights reserved
+            </span>
+          </div>
+        </div>
+      </section>
     </div>
 
-    <link href="assets/css/owl.carousel.min.css" rel="stylesheet">
-    <link href="assets/css/owl.theme.default.min.css" rel="stylesheet">
+    <link href="assets/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="assets/css/owl.theme.default.min.css" rel="stylesheet" />
     <script src="assets/css/jquery.min.js"></script>
     <script src="assets/css/owl.carousel.min.js"></script>
     <script src="assets/css/script.js"></script>
-
-</body>
-
+  </body>
 </html>
