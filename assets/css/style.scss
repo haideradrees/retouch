@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 $primary: #9D7333;
 $secondary: #E7A94A;
@@ -747,4 +748,122 @@ html {
             color: #FFFFFF !important;
         }
     }
+}
+
+.faq-section {
+    padding: 64px 0px;
+
+    .custom-accordion::after {
+        display: none;
+    }
+
+    .accordion-item {
+        border-radius: 0px;
+        border: none;
+        border-bottom: 1px solid #D9D9D9;
+    }
+
+    .accordion-button {
+        background: #fff;
+        padding: 24px 60px;
+
+        .content {
+            width: calc(100% - 30px);
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+
+        .date {
+            font-family: 'Noto Sans JP';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            color: #333333;
+            margin-bottom: 0px;
+        }
+
+        .question {
+            font-family: 'Noto Sans JP';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            color: #333333;
+            margin-bottom: 0px;
+        }
+
+        .badge {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 5px 16px;
+            gap: 10px;
+            width: fit-content;
+            height: 29px;
+            background: #9D7333;
+            border-radius: 5px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: #FFFFFF;
+        }
+    }
+
+    .accordion-body {
+        background: #fff;
+        padding: 0px 60px 10px;
+
+        p {
+            font-family: 'Noto Sans JP';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            color: #333333;
+            margin-bottom: 10px;
+        }
+    }
+
+    .custom-accordion {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .accordion-icon {
+        width: 20px;
+        height: auto;
+        transition: transform 0.3s ease;
+    }
+
+    .custom-accordion:not(.collapsed) .accordion-icon {
+        transform: rotate(90deg);
+    }
+}
+
+.company-profile {
+    padding: 64px 0px;
+
+    .content-section {
+        .point {
+            padding: 16px 10px;
+            border-bottom: 1px solid #D9D9D9;
+
+            p {
+                font-family: 'Noto Sans JP';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 19px;
+                color: #333333;
+                margin-bottom: 0px;
+            }
+        }
+    }
+
 }
