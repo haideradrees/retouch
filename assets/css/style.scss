@@ -318,6 +318,17 @@ html {
     margin-bottom: 56px;
   }
 
+  h4 {
+    font-family: 'Noto Sans JP';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+    margin-bottom: 24px;
+    color: #9D7333;
+  }
+
   h5 {
     font-family: "Noto Sans JP";
     font-style: normal;
@@ -415,6 +426,7 @@ html {
   background-size: 100%;
   background-position: bottom;
   background-repeat: no-repeat;
+
   .horse-card {
     display: flex;
     flex-direction: column;
@@ -482,11 +494,13 @@ html {
     justify-content: center;
     align-items: center;
   }
+
   .bottom-pagination {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+
     .custom-pagination {
       gap: 8px;
     }
@@ -563,6 +577,7 @@ html {
     z-index: 0;
   }
 }
+
 .play-btn-dark {
   display: flex;
   align-items: center;
@@ -793,14 +808,16 @@ html {
     }
   }
 
-  .card-bottom {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 24px;
-  }
 }
+
+.card-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+}
+
 .btn-support {
   display: flex !important;
   justify-content: center !important;
@@ -933,12 +950,16 @@ html {
       }
     }
   }
+
   .tabs-section {
     width: 100%;
+
     .nav-pills {
       width: 100%;
+
       .nav-item {
         width: 25%;
+
         .nav-link {
           width: 100%;
           border-radius: 8px 8px 0px 0px;
@@ -951,16 +972,19 @@ html {
           text-align: center;
           color: #9d7333;
         }
+
         .nav-link.active {
           background: $primary;
           color: #fff;
         }
       }
     }
+
     .tab-content {
       border: 2px solid $primary;
       border-radius: 0px 0px 8px 8px;
       padding: 24px;
+
       p {
         font-family: "Noto Sans JP";
         font-style: normal;
@@ -970,14 +994,17 @@ html {
         color: #333333;
         margin-bottom: 24px;
       }
+
       .points {
         display: flex;
         gap: 8px;
         align-items: baseline;
         margin-bottom: 8px;
+
         .check {
           width: 14px;
         }
+
         span {
           width: calc(100% - 22px);
           font-family: "Noto Sans JP";
@@ -999,6 +1026,7 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   h2 {
     border-bottom: 2px solid $primary;
     padding: 0px 33px;
@@ -1010,6 +1038,7 @@ html {
     margin-bottom: 32px;
     color: #9d7333;
   }
+
   p {
     font-family: "Noto Sans JP";
     font-style: normal;
@@ -1018,6 +1047,7 @@ html {
     line-height: 170%;
     text-align: center;
     color: #333333;
+
     a {
       color: $primary;
       font-size: 20px;
@@ -1030,21 +1060,25 @@ html {
   margin-top: 100px;
   padding: 40px 0px;
   background: #efefef;
+
   .footer-row {
     width: 100%;
     margin-bottom: 56px;
     display: flex;
     justify-content: space-between;
+
     .footer-left {
       width: fit-content;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+
       .f-logo {
         height: 50px;
         margin-bottom: 10px;
       }
+
       h4 {
         font-family: "Noto Sans JP";
         font-style: normal;
@@ -1055,6 +1089,7 @@ html {
         color: #333333;
         margin-bottom: 10px;
       }
+
       p {
         font-family: "Noto Sans JP";
         font-style: normal;
@@ -1065,10 +1100,12 @@ html {
         margin-bottom: 0px;
       }
     }
+
     .footer-right {
       display: flex;
       flex-direction: column;
       gap: 24px;
+
       a {
         font-family: "Noto Sans JP";
         font-style: normal;
@@ -1079,11 +1116,13 @@ html {
       }
     }
   }
+
   .bottom {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+
     span {
       font-family: "Noto Sans JP";
       font-style: normal;
@@ -1092,6 +1131,7 @@ html {
       line-height: 17px;
       text-align: center;
       color: #333333;
+
       a {
         font-family: "Noto Sans JP";
         font-style: normal;
@@ -1113,8 +1153,10 @@ html {
   background-position: center;
   background-repeat: no-repeat;
 }
+
 .category-list {
   margin-bottom: 64px;
+
   h3 {
     font-family: "Noto Sans JP";
     font-style: normal;
@@ -1124,11 +1166,13 @@ html {
     color: #333333;
     margin-bottom: 16px;
   }
+
   .list {
     width: 100%;
     display: flex;
     gap: 8px;
     flex-wrap: wrap;
+
     .pills {
       display: flex;
       flex-direction: row;
@@ -1153,17 +1197,20 @@ html {
 .events-section {
   padding: 160px 0px 60px;
 }
+
 .events-container {
   width: 100%;
   max-width: 1030px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+
   .tag-line {
     display: flex;
     align-items: center;
     gap: 16px;
     margin-bottom: 16px;
+
     .badge {
       display: flex;
       flex-direction: row;
@@ -1181,8 +1228,10 @@ html {
       line-height: 19px;
       color: #ffffff;
     }
+
     p {
-      margin-bottom: 0px; /* 2025.11.01 */
+      margin-bottom: 0px;
+      /* 2025.11.01 */
       font-family: "Roboto";
       font-style: normal;
       font-weight: 400;
@@ -1191,10 +1240,12 @@ html {
       color: #333333;
     }
   }
+
   .heading {
     width: 100%;
     border-bottom: 1px solid #000;
     margin-bottom: 80px;
+
     h1 {
       font-family: "Noto Sans JP";
       font-style: normal;
@@ -1205,6 +1256,7 @@ html {
       margin-bottom: 16px;
     }
   }
+
   .banners-row {
     width: 100%;
     display: flex;
@@ -1212,21 +1264,26 @@ html {
     justify-content: space-evenly;
     gap: 60px;
     margin-bottom: 64px;
+
     .banner {
       width: 100%;
+
       img {
         width: 100%;
       }
     }
   }
+
   .article-banner {
     max-width: 600px;
     margin: 0px auto;
     margin-bottom: 64px;
+
     img {
       width: 100%;
     }
   }
+
   .video-card {
     width: 600px;
     height: 400px;
@@ -1241,6 +1298,7 @@ html {
     height: 100%;
     border: none;
   }
+
   .content {
     p {
       font-family: "Noto Sans JP";
@@ -1251,6 +1309,7 @@ html {
       color: #333333;
       margin-bottom: 32px;
     }
+
     h5 {
       font-family: "Noto Sans JP";
       font-style: normal;
@@ -1261,6 +1320,7 @@ html {
       color: #333333;
     }
   }
+
   .bottom-btns {
     width: 100%;
     display: flex;
@@ -1272,12 +1332,14 @@ html {
 
 .one-share-section {
   padding: 64px 0px;
+
   .inner-content {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     .price-card {
       display: flex;
       flex-direction: column;
@@ -1288,6 +1350,7 @@ html {
       background: #9d7333;
       border-radius: 4px;
       margin-bottom: 32px;
+
       h3 {
         font-family: "Noto Sans JP";
         font-style: normal;
@@ -1296,6 +1359,7 @@ html {
         line-height: 170%;
         color: #ffffff;
         margin-bottom: 0px;
+
         small {
           font-family: "Noto Sans JP";
           font-style: normal;
@@ -1306,6 +1370,7 @@ html {
           margin-bottom: 0px;
         }
       }
+
       h4 {
         font-family: "Noto Sans JP";
         font-style: normal;
@@ -1315,6 +1380,7 @@ html {
         color: #ffffff;
         margin-bottom: 0px;
       }
+
       h6 {
         font-family: "Noto Sans JP";
         font-style: normal;
@@ -1325,6 +1391,7 @@ html {
         color: #ffffff;
       }
     }
+
     h2 {
       font-family: "Noto Sans JP";
       font-style: normal;
@@ -1335,6 +1402,7 @@ html {
       color: #333333;
       margin-bottom: 56px;
     }
+
     p {
       font-family: "Noto Sans JP";
       font-style: normal;
@@ -1344,11 +1412,13 @@ html {
       text-align: center;
       margin-bottom: 32px;
       color: #000000;
+
       a,
       span {
         color: $primary;
       }
     }
+
     h5 {
       font-family: "Noto Sans JP";
       font-style: normal;
@@ -1358,6 +1428,7 @@ html {
       color: #1a492d;
       margin-bottom: 56px;
     }
+
     .membership-card {
       display: flex;
       flex-direction: column;
@@ -1369,9 +1440,11 @@ html {
       background: #ffffff;
       border: 2px solid #9d7333;
       border-radius: 180px;
+
       img {
         height: 26px;
       }
+
       h4 {
         font-family: "Noto Sans JP";
         font-style: normal;
@@ -1381,6 +1454,7 @@ html {
         color: #9d7333;
         margin-bottom: 24px;
       }
+
       h6 {
         font-family: "Noto Sans JP";
         font-style: normal;
@@ -1390,6 +1464,7 @@ html {
         color: #333333;
         margin: -8px 0px;
       }
+
       h2 {
         font-family: "Noto Sans JP";
         font-style: normal;
@@ -1397,6 +1472,7 @@ html {
         font-size: 56px;
         color: #333333;
         margin-bottom: 0px;
+
         sub {
           font-size: 20px;
         }
@@ -1417,18 +1493,21 @@ html {
   background: #ffffff;
   border: 2px solid #9d7333;
   border-radius: 8px;
+
   .banner {
     width: 100%;
     height: 200px;
     border-radius: 8px;
     overflow: hidden;
     margin-bottom: 24px;
+
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
   }
+
   h6 {
     font-family: "Roboto";
     font-style: normal;
@@ -1438,6 +1517,7 @@ html {
     color: #333333;
     margin-bottom: 8px;
   }
+
   h3 {
     font-family: "Noto Sans JP";
     font-style: normal;
@@ -1447,6 +1527,7 @@ html {
     line-height: 130%;
     color: #333333;
   }
+
   p {
     font-family: "Noto Sans JP";
     font-style: normal;
@@ -1473,9 +1554,11 @@ html {
   align-items: center;
   gap: 12px;
   z-index: 999;
+
   img {
     height: 27px;
   }
+
   span {
     font-family: "Noto Sans JP";
     font-style: normal;
@@ -1484,5 +1567,329 @@ html {
     line-height: 150%;
     text-align: center;
     color: #9d7333;
+  }
+}
+
+.donations-section {
+  padding: 64px 0px;
+
+  .content {
+    padding-right: 30px;
+
+    h3 {
+      font-family: 'Noto Sans JP';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 150%;
+      color: #333333;
+      margin-bottom: 24px;
+    }
+
+    p {
+      font-family: 'Noto Sans JP';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 170%;
+      color: #333333;
+      margin-bottom: 24px;
+    }
+  }
+
+  .banner {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+    }
+  }
+
+}
+
+.notice-section {
+  width: 100%;
+  padding: 80px 48px 33px 48px;
+  width: 100%;
+  min-height: 360px;
+  background: #ffffff;
+  border: 2px solid #9d7333;
+  border-radius: 8px;
+  position: relative;
+  margin-top: 67px;
+
+  .card-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 40px;
+    gap: 10px;
+    width: fit-content;
+    height: 70px;
+    background: #fff;
+    border-left: 2px solid $primary;
+    border-right: 2px solid $primary;
+    position: absolute;
+    left: 50%;
+    top: -35px;
+    transform: translateX(-50%);
+
+    span {
+      font-family: "Noto Sans JP";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 38px;
+      text-align: center;
+      color: $primary;
+    }
+  }
+
+  p {
+    font-family: 'Noto Sans JP';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 170%;
+    color: #333333;
+    margin-bottom: 42px;
+  }
+}
+
+.purchasing-section {
+  padding: 64px 0px;
+
+  p {
+    font-family: 'Noto Sans JP';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 170%;
+    color: #000000;
+  }
+
+  .banner {
+    width: calc(100% - 20px);
+    border-radius: 8px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .content {
+    h4 {
+      font-family: 'Noto Sans JP';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 170%;
+      color: #9D7333;
+      margin-bottom: 16px;
+    }
+
+    .point {
+      display: flex;
+      margin-bottom: 8px;
+      align-items: baseline;
+
+      .check {
+        width: 15px;
+        height: 15px;
+        margin-right: 8px;
+      }
+
+      span {
+        width: calc(100% - 23px);
+        font-family: 'Noto Sans JP';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #333333;
+      }
+    }
+  }
+}
+
+.purchase-conditions {
+  padding: 20px 0px;
+
+  h2 {
+    border-bottom: 2px solid $primary;
+    padding: 0px 33px;
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 170%;
+    margin-bottom: 32px;
+    color: #9d7333;
+  }
+}
+
+.conditions-card {
+  width: 100%;
+  border: 2px solid $primary;
+  min-height: 200px;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 700px;
+  min-height: 234px;
+  margin: 0px auto 32px;
+  display: flex;
+  align-items: center;
+
+  .numbering {
+    height: -webkit-fill-available;
+    width: 80px;
+    padding: 10px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    background: $primary;
+    line-height: 56px;
+    text-align: center;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content {
+    padding: 24px 48px;
+    width: calc(100% - 80px);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h3 {
+      font-family: 'Noto Sans JP';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 22px;
+      display: flex;
+      align-items: center;
+      color: #9D7333;
+      margin-bottom: 16px;
+    }
+
+    p {
+      font-family: 'Noto Sans JP';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      display: flex;
+      align-items: center;
+      color: #333333;
+    }
+
+    .point {
+      display: flex;
+      margin-bottom: 8px;
+      align-items: baseline;
+
+      .check {
+        width: 15px;
+        height: 15px;
+        margin-right: 8px;
+      }
+
+      span {
+        width: calc(100% - 23px);
+        font-family: 'Noto Sans JP';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #333333;
+      }
+    }
+  }
+}
+
+.about-ownership {
+  width: 100%;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    border-bottom: 2px solid $primary;
+    padding: 0px 33px;
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 170%;
+    margin-bottom: 32px;
+    color: #9d7333;
+  }
+
+  .owner-sponsor-card {
+    width: 100%;
+    max-width: 530px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    background: #FFFFFF;
+    border: 2px solid #9D7333;
+    border-radius: 8px;
+    margin-bottom: 56px;
+
+    p {
+      font-family: 'Noto Sans JP';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      color: #333333;
+      margin-bottom: 16px;
+    }
+
+    .point {
+      display: flex;
+      margin-bottom: 8px;
+      align-items: baseline;
+
+      .check {
+        width: 15px;
+        height: 15px;
+        margin-right: 8px;
+      }
+
+      span {
+        width: calc(100% - 23px);
+        font-family: 'Noto Sans JP';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #333333;
+      }
+    }
+  }
+
+  .b2 {
+    font-family: 'Noto Sans JP';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #333333;
+    margin-bottom: 56px;
   }
 }
