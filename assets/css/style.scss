@@ -134,6 +134,7 @@ html {
   from {
     transform: translateY(-100%);
   }
+
   to {
     transform: translateY(0);
   }
@@ -458,6 +459,8 @@ html {
     align-items: center;
     padding: 24px;
     width: 100%;
+    text-decoration: none;
+    color: inherit;
     background: #9d7333;
     border-radius: 8px;
     margin-bottom: 30px;
@@ -877,6 +880,10 @@ html {
   font-size: 20px !important;
   line-height: 170% !important;
   color: #ffffff !important;
+
+  &:hover {
+    background: #9d7333 !important;
+  }
 }
 
 .faq-section {
@@ -1294,6 +1301,11 @@ html {
       font-size: 12px;
       line-height: 170%;
       color: #9d7333;
+
+      &:hover {
+        background: $primary;
+        color: #fff;
+      }
     }
   }
 
