@@ -66,3 +66,21 @@ function load_file(filename, callback) {
 // <include src="header.html"></include>
 // Component creator
 
+
+
+var thumbs = new Swiper(".thumb-slider", {
+  slidesPerView:5,
+  spaceBetween:10,
+  watchSlidesProgress:true,
+  navigation:{
+    nextEl:".thumb-next",
+    prevEl:".thumb-prev",
+  }
+});
+
+var main = new Swiper(".main-slider", {
+  spaceBetween:10,
+  thumbs:{
+    swiper:thumbs
+  }
+});
