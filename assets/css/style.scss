@@ -1238,19 +1238,15 @@ html {
     line-height: 170%;
     color: #333333;
     margin-bottom: 16px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 
     svg {
-      transition: transform 0.3s ease;
+      display: none;
     }
   }
 
   .list {
     width: 100%;
-    display: none;
+    display: flex;
     gap: 8px;
     flex-wrap: wrap;
 
@@ -1274,15 +1270,6 @@ html {
     }
   }
 
-  &.open {
-    h3 svg {
-      transform: rotate(180deg);
-    }
-
-    .list {
-      display: flex;
-    }
-  }
 }
 
 .events-section {

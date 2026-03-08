@@ -289,6 +289,70 @@
         right: 0;
         z-index: 9;
     }
-}
 
-@media screen and (max-width: 450px) {}
+    .category-list {
+        background: #fff;
+        border: 1px solid #9d7333;
+        border-radius: 8px;
+        overflow: hidden;
+
+        h3 {
+            background: #9d7333;
+            color: #fff;
+            margin-bottom: 0;
+            padding: 12px 16px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            svg {
+                display: block;
+                stroke: #fff;
+                transition: transform 0.3s ease;
+            }
+        }
+
+        .list {
+            display: none;
+            padding: 16px;
+        }
+
+        &.open {
+            h3 svg {
+                transform: rotate(180deg);
+            }
+
+            .list {
+                display: flex;
+            }
+        }
+    }
+
+    .category-list {
+        margin-bottom: 40px;
+    }
+
+    .category-list .list .pills {
+        font-size: 10px;
+    }
+
+    .list-of-horses .horse-card {
+        padding: 16px 16px 10px;
+    }
+
+    .back-to-top {
+        height: 80px;
+        width: 80px;
+        right: 20px;
+        bottom: 20px;
+
+        img {
+            height: 20px;
+        }
+
+        span {
+            font-size: 8px;
+        }
+    }
+}
