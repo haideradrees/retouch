@@ -180,6 +180,7 @@ html {
     right: 0;
     bottom: 0;
     z-index: 1;
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -423,7 +424,7 @@ html {
   padding: 64px 0px;
   min-height: 500px;
   background-image: url(../images/bg-grass.png);
-  background-size: 100%;
+  background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
 
@@ -433,7 +434,6 @@ html {
     align-items: center;
     padding: 24px;
     width: 100%;
-    min-height: 527px;
     background: #9d7333;
     border-radius: 8px;
     margin-bottom: 30px;
@@ -465,6 +465,8 @@ html {
     .tags {
       display: flex;
       gap: 4px;
+      justify-content: space-between;
+      flex-wrap: wrap;
       margin-bottom: 8px;
       width: 100%;
 
@@ -475,7 +477,7 @@ html {
         align-items: center;
         padding: 4px 8px;
         gap: 10px;
-        width: 100%;
+        width: calc(33.33% - 3px);
         height: 25px;
         background: #ffffff;
         border-radius: 4px;
@@ -646,6 +648,7 @@ html {
     align-items: center;
     padding: 12px 40px;
     gap: 10px;
+    white-space: nowrap;
     width: fit-content;
     height: 70px;
     background: #9d7333;
@@ -678,6 +681,10 @@ html {
       justify-content: center;
       align-items: center;
       flex-direction: column;
+
+      a {
+        width: 100%;
+      }
 
       .badge {
         margin-bottom: 8px;
@@ -2288,5 +2295,89 @@ html {
     justify-content: center;
     align-items: center;
     padding-top: 60px;
+  }
+}
+
+.header-sm {
+  width: 100%;
+  background: $primary;
+  height: 66px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+  position: relative;
+
+  .logo {
+    height: 66px;
+    background: #fff;
+    padding: 8px 24px;
+
+    img {
+      width: 50px;
+      width: 50px;
+    }
+  }
+
+  .menu-btn {
+    padding: 8px 24px;
+    height: 66px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    .burger {
+      height: 38px;
+    }
+  }
+}
+
+.offcanvas {
+  height: fit-content !important;
+
+  .offcanvas-header {
+    padding: 8px 32px 8px 24px;
+
+    .logo img {
+      height: 50px;
+    }
+
+    .close {
+      padding: 0px;
+      border: none;
+      background: transparent;
+    }
+  }
+
+  .offcanvas-body {
+    padding: 85px 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+    a {
+      font-family: 'Noto Sans JP';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      color: #333333;
+    }
+
+    .social-btns {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      justify-content: space-between;
+
+      img {
+        height: 42px;
+      }
+    }
   }
 }
