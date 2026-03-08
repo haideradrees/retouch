@@ -42,7 +42,7 @@
         <div class="collapse navbar-collapse" id="navbarScroll">
           <ul class="navbar-nav ms-auto my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px">
             <li class="nav-item">
-              <a class="nav-link" href="listing.html">在籍馬一覧</a>
+              <a class="nav-link active" aria-current="page" href="listing.html">在籍馬一覧</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="membership-recruitment.html">会員募集について</a>
@@ -60,6 +60,49 @@
         </div>
       </nav>
     </section>
+    <section class="header-sm">
+      <div class="logo">
+        <img src="assets/images/logo.svg" alt="">
+      </div>
+      <div class="menu-btn" data-bs-toggle="offcanvas" data-bs-target="#topOffcanvas">
+        <img src="assets/images/menu-btn.svg" class="burger" alt="">
+      </div>
+    </section>
+    <div class="offcanvas offcanvas-top custom-offcanvas" tabindex="-1" id="topOffcanvas">
+      <div class="offcanvas-header d-flex justify-content-between align-items-center">
+        <div class="logo">
+          <img src="assets/images/logo.svg" alt="logo" height="50">
+        </div>
+        <button type="button" class="close" data-bs-dismiss="offcanvas">
+          <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.5 25L0 22.5L10 12.5L0 2.5L2.5 0L12.5 10L22.5 0L25 2.5L15 12.5L25 22.5L22.5 25L12.5 15L2.5 25Z"
+              fill="#252525" />
+          </svg>
+        </button>
+      </div>
+      <!-- Body -->
+      <div class="offcanvas-body">
+        <a href="">在籍馬一覧</a>
+        <a href="">会員募集について</a>
+        <a href="">寄付・単発支援</a>
+        <a href="">馬の購入・預託</a>
+        <a href="">社長コラム</a>
+        <div class="social-btns">
+          <a href="">
+            <img src="assets/images/social1.svg" alt="">
+          </a>
+          <a href="">
+            <img src="assets/images/social2.svg" alt="">
+          </a>
+          <a href="">
+            <img src="assets/images/social3.svg" alt="">
+          </a>
+          <a href="">
+            <img src="assets/images/social4.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
     <section class="hourse-detail-section">
       <div class="lg-container">
         <div class="row">
@@ -295,10 +338,12 @@
   </div>
 
   <!-- Lightbox -->
-  <div id="galleryLightbox" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.9);z-index:9999;justify-content:center;align-items:center;">
-    <button onclick="document.getElementById('galleryLightbox').style.display='none'" style="position:absolute;top:20px;right:20px;background:none;border:none;cursor:pointer;z-index:10000;">
+  <div id="galleryLightbox"
+    style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.9);z-index:9999;justify-content:center;align-items:center;">
+    <button onclick="document.getElementById('galleryLightbox').style.display='none'"
+      style="position:absolute;top:20px;right:20px;background:none;border:none;cursor:pointer;z-index:10000;">
       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M18 6L6 18M6 6l12 12" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M18 6L6 18M6 6l12 12" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
       </svg>
     </button>
     <img id="lightboxImg" src="" style="max-width:90%;max-height:90%;object-fit:contain;" />
