@@ -1610,6 +1610,8 @@ html {
   background: #ffffff;
   border: 2px solid $primary;
   border-radius: 8px;
+  text-decoration: none;
+  color: inherit;
 
   .banner {
     width: 100%;
