@@ -47,6 +47,7 @@
 
     .company-profile,
     .faq-section,
+    .purchasing-section,
     .support-methods,
     .ranking,
     .list-of-horses {
@@ -521,5 +522,106 @@
 
     .notice-section {
         padding: 55px 24px 40px;
+    }
+
+    .purchasing-section .banner {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .about-ownership h2,
+    .purchase-conditions h2 {
+        font-size: 20px;
+        padding-bottom: 8px;
+    }
+
+    .conditions-card {
+        flex-direction: column;
+    }
+
+    .conditions-card .numbering {
+        width: 100%;
+        font-size: 40px;
+        height: 63px;
+    }
+
+    .conditions-card .content {
+        width: 100%;
+        padding: 24px;
+    }
+
+    .conditions-card .content h3 {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .center-heading h4 {
+        font-size: 22px;
+    }
+
+    .about-ownership {
+        padding: 20px 20px;
+    }
+
+    .one-share-section .inner-content {
+        br {
+            display: none;
+        }
+
+        .btn-support {
+            margin-bottom: 30px;
+        }
+    }
+
+    .center-heading .horse {
+        height: 27px;
+    }
+
+    .representative-card {
+        padding: 16px;
+        height: calc(100% - 16px);
+        margin-bottom: 16px;
+    }
+
+    .representative-card .banner {
+        height: 87px;
+        margin-bottom: 16px;
+    }
+
+    .representative-card h3 {
+        font-size: 14px;
+    }
+
+    .representative-card p {
+        font-size: 12px;
+    }
+
+    .events-section {
+        padding: 80px 0px 60px;
+    }
+
+    .events-container .heading h1 {
+        font-size: 28px;
+        line-height: normal;
+    }
+
+    .events-container .article-banner,
+    .events-container .heading {
+        margin-bottom: 40px;
+    }
+
+    .events-container .video-card {
+        width: 100%;
+        height: 229px;
+    }
+
+    .events-container .bottom-btns {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .play-btn,
+    .play-btn-dark {
+        margin-top: 25px;
     }
 }
