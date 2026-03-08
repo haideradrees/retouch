@@ -939,8 +939,60 @@ html {
     transition: transform 0.3s ease;
   }
 
-  .custom-accordion:not(.collapsed) .accordion-icon {
-    transform: rotate(90deg);
+  .event-list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 24px 60px;
+    border-bottom: 1px solid #d9d9d9;
+    color: #333;
+
+    .content {
+      width: calc(100% - 30px);
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .date {
+      font-family: "Noto Sans JP";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      color: #333333;
+      margin-bottom: 0px;
+    }
+
+    .question {
+      font-family: "Noto Sans JP";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      color: #333333;
+      margin-bottom: 0px;
+    }
+
+    .badge {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 5px 16px;
+      gap: 10px;
+      width: fit-content;
+      height: 29px;
+      background: #9d7333;
+      border-radius: 5px;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: #ffffff;
+    }
   }
 }
 
@@ -1553,6 +1605,7 @@ html {
 }
 
 .back-to-top {
+  cursor: pointer;
   position: fixed;
   width: 100px;
   height: 100px;
