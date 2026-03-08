@@ -95,12 +95,14 @@
     .about-section .bottom-images .h-right {
         height: 173px;
     }
-.hourse-detail-section .right-content {
-    padding: 0px;
-}
-.hourse-detail-section .right-content .looking-for-support {
-    margin: 48px auto 40px;
-}
+
+    .hourse-detail-section .right-content {
+        padding: 0px;
+    }
+
+    .hourse-detail-section .right-content .looking-for-support {
+        margin: 48px auto 40px;
+    }
 }
 
 
@@ -365,13 +367,13 @@
                 display: flex;
                 flex-wrap: wrap;
                 gap: 6px;
-                height: 280px;
+                height: auto;
             }
 
             .swiper-slide {
                 width: 32px !important;
                 height: 48px !important;
-                
+                margin-right: 0px !important;
                 aspect-ratio: 3/4;
                 opacity: 1;
             }
@@ -400,5 +402,52 @@
         span {
             font-size: 8px;
         }
+    }
+
+    .hourse-detail-section .left-content .heading h2 {
+        font-size: 28px;
+    }
+
+    .hourse-detail-section .right-content .product-details .points-row {
+        flex-direction: column;
+    }
+
+    .hourse-detail-section .right-content .product-details .points-row .ans {
+        width: 100%;
+    }
+
+    .hourse-detail-section .right-content .product-details .points-row {
+        margin-bottom: 24px;
+    }
+
+    .hourse-detail-section .right-content .product-details .points-row {
+        gap: 8px;
+    }
+
+    .hourse-detail-section .bottom-btn {
+        padding-top: 0px;
+    }
+
+    .hourse-detail-section .left-content .video-card {
+        height: 180px;
+    }
+
+    .hourse-detail-section .right-content .looking-for-support {
+        padding: 4px 40px !important;
+        height: auto;
+        min-height: auto;
+    }
+
+    .hourse-detail-section .right-content .product-details .points-row .que {
+        width: fit-content;
+        padding: 4px 20px;
+
+        br {
+            display: none;
+        }
+
+    }
+    .hourse-detail-section {
+        padding: 60px 0px;
     }
 }
