@@ -103,8 +103,19 @@
     .hourse-detail-section .right-content .looking-for-support {
         margin: 48px auto 40px;
     }
-}
 
+    .one-share-section .inner-content .price-card h3 small {
+        font-size: 24px;
+    }
+
+    .one-share-section .inner-content .price-card h3 {
+        font-size: 40px;
+    }
+
+    .one-share-section .inner-content .membership-card {
+        margin: 0px auto 40px;
+    }
+}
 
 
 @media screen and (max-width: 768px) {
@@ -139,7 +150,6 @@
 
     .center-heading h3 {
         font-size: 28px;
-        max-width: 282px;
         text-align: center;
         line-height: normal;
         margin-bottom: 25px;
@@ -447,7 +457,69 @@
         }
 
     }
+
     .hourse-detail-section {
         padding: 60px 0px;
+    }
+
+    .one-share-section .inner-content .price-card h4 {
+        font-size: 24px;
+    }
+
+    .one-share-section .inner-content .price-card {
+        min-height: auto;
+    }
+
+    .one-share-section .inner-content p {
+        text-align: left;
+    }
+
+    .one-share-section .inner-content h5 {
+        text-align: left;
+    }
+
+    .requests-section {
+        padding-top: 0px;
+    }
+
+    .one-share-section .inner-content h2 {
+        margin-bottom: 32px;
+    }
+
+    .one-share-section .inner-content h2 {
+        text-align: left;
+    }
+
+    .one-share-section .inner-content .price-card h3 small {
+        font-size: 24px;
+    }
+
+    .one-share-section .inner-content .price-card h3 {
+        font-size: 40px;
+    }
+
+    .one-share-section .inner-content .membership-card {
+        margin: 0px auto 40px;
+    }
+
+    .donations-section .content h3 {
+        font-size: 24px;
+
+        br {
+            display: none;
+        }
+    }
+
+    .notice-section .card-heading span {
+        font-size: 24px;
+    }
+
+    .notice-section .card-heading {
+        padding: 10px 40px;
+        white-space: nowrap;
+    }
+
+    .notice-section {
+        padding: 55px 24px 40px;
     }
 }
