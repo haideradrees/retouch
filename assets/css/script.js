@@ -34,6 +34,27 @@ $(window).scroll(function () {
     } else {
         $("#header").removeClass("active");
     }
+    // Header sticky after 150px
+    if (scroll > 150) {
+        if (!$(".header-sm").hasClass("fixed")) {
+            $(".header-sm").addClass("fixed");
+            if (!$(".header-sm-spacer").length) {
+                $(".header-sm").after('<div class="header-sm-spacer" style="height:66px"></div>');
+            }
+        }
+        if (!$(".header").hasClass("fixed")) {
+            var headerHeight = $(".header").outerHeight();
+            $(".header").addClass("fixed");
+            if (!$(".header-spacer").length) {
+                $(".header").after('<div class="header-spacer" style="height:' + headerHeight + 'px"></div>');
+            }
+        }
+    } else {
+        $(".header-sm").removeClass("fixed");
+        $(".header-sm-spacer").remove();
+        $(".header").removeClass("fixed");
+        $(".header-spacer").remove();
+    }
 });
 // Header Active
 
