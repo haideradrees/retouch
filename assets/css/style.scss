@@ -184,6 +184,10 @@ html {
       .nav-link:hover {
         color: $success;
       }
+
+      .nav-link.active {
+        color: #9d7333;
+      }
     }
   }
 }
@@ -1205,6 +1209,10 @@ html {
         font-size: 18px;
         line-height: 22px;
         color: #333333;
+
+        &.active {
+          color: #9d7333;
+        }
       }
     }
   }
@@ -2402,6 +2410,10 @@ html {
       font-size: 18px;
       line-height: 22px;
       color: #333333;
+
+      &.active {
+        color: #9d7333;
+      }
     }
 
     .social-btns {
