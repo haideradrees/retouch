@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(for f in index.html application.html article.html donations.html events.html horse-details.html listing.html membership-recruitment.html purchasing.html)",
+      "Bash(do sed -i 's|<a href=\"\"\"\">在籍馬一覧</a>|<a href=\"\"listing.html\"\">在籍馬一覧</a>|g; s|<a href=\"\"\"\">会員募集について</a>|<a href=\"\"membership-recruitment.html\"\">会員募集について</a>|g; s|<a href=\"\"\"\">寄付・単発支援</a>|<a href=\"\"donations.html\"\">寄付・単発支援</a>|g; s|<a href=\"\"\"\">馬の購入・預託</a>|<a href=\"\"purchasing.html\"\">馬の購入・預託</a>|g; s|<a href=\"\"\"\">社長コラム</a>|<a href=\"\"representative.html\"\">社長コラム</a>|g' \"$f\")",
+      "Bash(done)"
+    ]
+  }
+}
