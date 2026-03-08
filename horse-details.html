@@ -142,13 +142,13 @@
           </div>
           <div class="col-lg-7">
             <div class="right-content">
-              <div class="looking-for-support">
+              <a href="application.html" class="looking-for-support">
                 <span>＼一口支援募集中／</span>
                 <p>
                   申込みはこちら
                   <i class="fa-sharp fa-solid fa-caret-right"></i>
                 </p>
-              </div>
+              </a>
               <div class="product-details">
                 <div class="points-row">
                   <div class="que">名前の由来</div>
@@ -253,14 +253,14 @@
         </div>
       </div>
       <div class="bottom-btn">
-        <div class="play-btn">
+        <a href="listing.html" class="play-btn">
           <div class="play">
             <svg width="19" height="22" viewBox="0 0 19 22" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M0.000122041 0L18.7501 10.8253L0.000122351 21.6506L0.000122041 0Z" fill="white" />
             </svg>
           </div>
-          <div class="btn-light">もっと見る</div>
-        </div>
+          <div class="btn-light">一覧へ戻る</div>
+        </a>
       </div>
     </section>
     <section class="footer">
@@ -294,10 +294,33 @@
     </section>
   </div>
 
+  <!-- Lightbox -->
+  <div id="galleryLightbox" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.9);z-index:9999;justify-content:center;align-items:center;">
+    <button onclick="document.getElementById('galleryLightbox').style.display='none'" style="position:absolute;top:20px;right:20px;background:none;border:none;cursor:pointer;z-index:10000;">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M18 6L6 18M6 6l12 12" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+    <img id="lightboxImg" src="" style="max-width:90%;max-height:90%;object-fit:contain;" />
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="assets/css/jquery.min.js"></script>
   <script src="assets/css/owl.carousel.min.js"></script>
   <script src="assets/css/script.js"></script>
+  <script>
+    document.querySelector('.main-slider').addEventListener('click', function () {
+      var activeSlide = this.querySelector('.swiper-slide-active img') || this.querySelector('.swiper-slide img');
+      if (activeSlide) {
+        var lightbox = document.getElementById('galleryLightbox');
+        document.getElementById('lightboxImg').src = activeSlide.src;
+        lightbox.style.display = 'flex';
+      }
+    });
+    document.getElementById('galleryLightbox').addEventListener('click', function (e) {
+      if (e.target === this) this.style.display = 'none';
+    });
+  </script>
 </body>
 
 </html>
