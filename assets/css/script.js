@@ -90,18 +90,18 @@ function load_file(filename, callback) {
 
 
 var thumbs = new Swiper(".thumb-slider", {
-  slidesPerView:5,
-  spaceBetween:10,
-  watchSlidesProgress:true,
-  navigation:{
-    nextEl:".thumb-next",
-    prevEl:".thumb-prev",
-  }
+    slidesPerView: 5,
+    spaceBetween: 10,
+    watchSlidesProgress: true,
+    navigation: {
+        nextEl: ".thumb-next",
+        prevEl: ".thumb-prev",
+    }
 });
 
 var main = new Swiper(".main-slider", {
-  spaceBetween:10,
-  thumbs:{
-    swiper:thumbs
-  }
+    spaceBetween: 10,
+    thumbs: {
+        swiper: thumbs
+    }
 });

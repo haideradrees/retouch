@@ -1238,11 +1238,19 @@ html {
     line-height: 170%;
     color: #333333;
     margin-bottom: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    svg {
+      transition: transform 0.3s ease;
+    }
   }
 
   .list {
     width: 100%;
-    display: flex;
+    display: none;
     gap: 8px;
     flex-wrap: wrap;
 
@@ -1263,6 +1271,16 @@ html {
       font-size: 12px;
       line-height: 170%;
       color: #9d7333;
+    }
+  }
+
+  &.open {
+    h3 svg {
+      transform: rotate(180deg);
+    }
+
+    .list {
+      display: flex;
     }
   }
 }
@@ -2337,7 +2355,8 @@ html {
 
 .offcanvas {
   height: fit-content !important;
-z-index: 99999;
+  z-index: 99999;
+
   .offcanvas-header {
     padding: 8px 32px 8px 24px;
 
