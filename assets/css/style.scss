@@ -2337,7 +2337,7 @@ html {
 
 .offcanvas {
   height: fit-content !important;
-
+z-index: 99999;
   .offcanvas-header {
     padding: 8px 32px 8px 24px;
 
